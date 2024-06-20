@@ -1,0 +1,185 @@
+.ommani-top {
+  background-color: #1ab357;
+  height: 110px;
+}
+.ommani-top .navbar-wrapper {
+  padding-top: 7px;
+  margin: 0px 100px 20px 100px;
+}
+.ommani-top .navbar-wrapper .container-xxl {
+  padding: 0;
+  margin: 0;
+}
+.ommani-top .navbar-wrapper .container-xxl .nav-container .navbar-left_container {
+  gap: 12px;
+}
+.ommani-top .navbar-wrapper .container-xxl .nav-container .navbar-left_container .nav-item {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.06px;
+  text-align: left;
+  color: white;
+}
+.ommani-top .navbar-wrapper .container-xxl .nav-container .navbar-left_container .nav-item:not(:last-child)::after {
+  content: "";
+  border-left: 1px solid white;
+  margin-left: 12px;
+}
+.ommani-top .navbar-wrapper .container-xxl .nav-container .navbar-right_container {
+  gap: 17px;
+}
+.ommani-top .navbar-wrapper .container-xxl .nav-container .navbar-right_container .nav-link {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.06px;
+  text-align: left;
+  color: white;
+}
+.ommani-top .container-wrapper {
+  margin: 0px 100px;
+}
+.ommani-top .container-wrapper .container-xxl {
+  padding: 0;
+  margin: 0;
+}
+.ommani-top .container-wrapper .container-xxl .header-icon {
+  margin-right: 38px;
+}
+.ommani-top .container-wrapper .container-xxl .location-map {
+  margin-right: 35px;
+  cursor: pointer;
+}
+.ommani-top .container-wrapper .container-xxl .location-map p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.06px;
+  text-align: left;
+  color: white;
+  margin: 0px 3px 0px 5px;
+}
+.ommani-top .container-wrapper .container-xxl .location-map .location_icon,
+.ommani-top .container-wrapper .container-xxl .location-map .arrow_icon {
+  color: white;
+}
+.ommani-top .container-wrapper .container-xxl .location-map .location_icon {
+  font-size: 18px;
+}
+.ommani-top .container-wrapper .container-xxl .location-map .arrow_icon {
+  font-size: 7px;
+}
+.ommani-top .container-wrapper .container-xxl .search-wrapper .search-block {
+  padding: 0px 0px 0px 12px;
+  border-radius: 8px;
+  background-color: white;
+}
+.ommani-top .container-wrapper .container-xxl .search-wrapper .search-block .select-value {
+  padding: 0px 20px 0px 0px;
+  margin-right: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16.41px;
+  text-align: left;
+  color: #1ab357;
+  background: url("../../images/arrow-icon.svg") no-repeat right center #1ab357;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ommani-top .container-wrapper .container-xxl .search-wrapper .search-block .select-value:focus {
+  outline: none;
+  border-color: transparent;
+  box-shadow: none;
+}
+.ommani-top .container-wrapper .container-xxl .search-wrapper .search-block .select-value .select-item {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.41px;
+  text-align: left;
+  color: black;
+}
+.ommani-top .container-wrapper .container-xxl .search-wrapper .search-block .search-input .space-border {
+  height: 14px;
+  width: 1px;
+  background-color: #9794a6;
+  margin-right: 12px;
+}
+.ommani-top .container-wrapper .container-xxl .search-wrapper .search-block .search-input input {
+  width: 400px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.41px;
+  text-align: left;
+}
+.ommani-top .container-wrapper .container-xxl .search-wrapper .search-block .search-input input::placeholder {
+  color: #9794a6;
+}
+.ommani-top .container-wrapper .container-xxl .search-wrapper .search-block .search-input input:focus {
+  outline: none;
+}
+.ommani-top .container-wrapper .container-xxl .search-wrapper .search-block .search-input .search-icon {
+  width: 52px;
+  height: 40px;
+  border: 2px solid white;
+  border-radius: 0px 8px 8px 0px;
+  background-color: #1ab357;
+}
+.ommani-top .container-wrapper .container-xxl .search-wrapper .fast-search-key_block {
+  margin-top: 7px;
+}
+.ommani-top .container-wrapper .container-xxl .search-wrapper .fast-search-key_block .list_key-product {
+  gap: 10px;
+}
+.ommani-top .container-wrapper .container-xxl .search-wrapper .fast-search-key_block .list_key-product li {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.06px;
+  text-align: left;
+  color: white;
+}
+.ommani-top .container-wrapper .container-xxl .header-icon-right {
+  margin-left: auto;
+  margin-top: 3px;
+  gap: 25px;
+  height: fit-content;
+}
+.ommani-top .container-wrapper .container-xxl .header-icon-right span .icon {
+  cursor: pointer;
+  font-size: 22px;
+  color: white;
+}
+.ommani-top .container-wrapper .container-xxl .header-icon-right span:nth-child(3) {
+  position: relative;
+}
+.ommani-top .container-wrapper .container-xxl .header-icon-right span:nth-child(3)::after {
+  content: "3";
+  position: absolute;
+  height: 17px;
+  width: 17px;
+  background-color: #fb424f;
+  border: 1px solid white;
+  border-radius: 50%;
+  top: -2px;
+  right: -7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 12px;
+}
+.ommani-top .container-wrapper .container-xxl .header-icon-right .user-block {
+  gap: 7px;
+}
+.ommani-top .container-wrapper .container-xxl .header-icon-right .user-block a .icon {
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+}
+.ommani-top .container-wrapper .container-xxl .header-icon-right .user-block .icon-text a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.41px;
+  text-align: left;
+  color: white;
+}
+
+/*# sourceMappingURL=header.css.map */
