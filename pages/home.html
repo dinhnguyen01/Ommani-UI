@@ -35,7 +35,7 @@
     <main>
       <div class="home-wrapper">
         <div class="subbar-top">
-          <div class="container-xxl">
+          <div class="container">
             <div class="subbar-block d-flex">
               <button
                 class="border-0 bg-transparent subbar-item d-flex align-items-center"
@@ -52,7 +52,7 @@
             </div>
           </div>
         </div>
-        <div class="container-xxl">
+        <div class="container">
           <div class="slider-wrapper">
             <div id="carouselExampleIndicators" class="carousel slide">
               <div class="carousel-indicators">
@@ -350,16 +350,58 @@
             <p class="section-heading">Tìm theo danh mục</p>
             <div class="product-category-list"></div>
           </section>
-          <section class="explore-wrapper">
-            <div class="explore-heading d-flex align-items-center">
+          <section
+            class="explore-wrapper d-flex flex-column align-items-center"
+          >
+            <div class="explore-heading d-flex align-items-center w-100">
               <p>Khám phá thêm</p>
             </div>
-            <div class="explore-item-container">
-              <div class="explore-item d-flex flex-column">
+            <div class="explore-item-container w-100"></div>
+            <button class="more-show text-uppercase">Xem thêm</button>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <div data-include-html="footer.html"></div>
+
+    <script src="../js/load-html.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module">
+      import data from "../js/data-product-category.js";
+      import jsonData from "../js/explore-card-data.js";
+
+      const productCategoryList = document.querySelector(
+        ".product-category-list"
+      );
+
+      const item_category = data.map((item, index) => {
+        return `<a
+                href="#"
+                class="item-category d-flex flex-column align-items-center justify-content-center"
+              >
+                <img
+                  class="img-fluid"
+                  src=${item.url}
+                  alt="img"
+                />
+                <p class="category-title">${item.title}</p>
+              </a>`;
+      });
+      productCategoryList.innerHTML = item_category.join("");
+
+      const exploreItemContainer = document.querySelector(
+        ".explore-item-container"
+      );
+
+      const explore_item = jsonData.map((exploreItem, index) => {
+        const storeKey = Object.keys(exploreItem);
+        const storeData = exploreItem[storeKey];
+        return `              <div class="explore-item w-100 d-flex flex-column">
                 <div class="item-header d-flex align-items-start">
                   <img
                     class="img-store"
-                    src="../images/home-img/img-store/aan.png"
+                    src=${storeData.img_store}
                     alt="img"
                   />
                   <div
@@ -400,14 +442,14 @@
                   </div>
                 </div>
                 <div class="item-body">
-                  <div class="product-store_block">
-                    <div class="product-img">
+                  ${storeData.img_product
+                    .map((img, index) => {
+                      return `<a class="product-store_block" href="#">
                       <img
-                        class="img-fluid"
-                        src="../images/home-img/product-img/xucxich.png"
+                        class="img-fluid product-img"
+                        src=${img}
                         alt="product-img"
                       />
-                    </div>
                     <div
                       class="product-content d-flex flex-column justify-content-start"
                     >
@@ -417,76 +459,16 @@
                       <p class="product-sold mb-0">Đã bán 12</p>
                       <p class="product-price mb-0">89.000 <span>đ</span></p>
                     </div>
-                  </div>
-                  <div class="product-store_block">
-                    <div class="product-img">
-                      <img
-                        class="img-fluid"
-                        src="../images/home-img/product-img/xucxich.png"
-                        alt="product-img"
-                      />
-                    </div>
-                    <div
-                      class="product-content d-flex flex-column justify-content-start"
-                    >
-                      <p class="product-name mb-0">
-                        Xúc Xích Đức Việt gói 16 hông khói
-                      </p>
-                      <p class="product-sold mb-0">Đã bán 12</p>
-                      <p class="product-price mb-0">89.000 <span>đ</span></p>
-                    </div>
-                  </div>
-                  <div class="product-store_block">
-                    <div class="product-img">
-                      <img
-                        class="img-fluid"
-                        src="../images/home-img/product-img/xucxich.png"
-                        alt="product-img"
-                      />
-                    </div>
-                    <div
-                      class="product-content d-flex flex-column justify-content-start"
-                    >
-                      <p class="product-name mb-0">
-                        Xúc Xích Đức Việt gói 16 hông khói
-                      </p>
-                      <p class="product-sold mb-0">Đã bán 12</p>
-                      <p class="product-price mb-0">89.000 <span>đ</span></p>
-                    </div>
-                  </div>
+                  </a>`;
+                    })
+                    .join("")}
                 </div>
-              </div>
-            </div>
-          </section>
-        </div>
-      </div>
-    </main>
-
-    <div data-include-html="footer.html"></div>
-
-    <script src="../js/load-html.js"></script>
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="module">
-      import data from "../js/data-product-category.js";
-
-      const productCategoryList = document.querySelector(
-        ".product-category-list"
-      );
-
-      const item_category = data.map((item, index) => {
-        return `<a
-                href="#"
-                class="item-category d-flex flex-column align-items-center justify-content-center"
-              >
-                <img
-                  class="img-fluid"
-                  src=${item.url}
-                  alt="img"
-                />
-                <p class="category-title">${item.title}</p>
-              </a>`;
+              </div>`;
       });
-      productCategoryList.innerHTML = item_category.join("");
+
+      console.log(explore_item);
+
+      exploreItemContainer.innerHTML = explore_item.join("");
     </script>
   </body>
 </html>

@@ -21,12 +21,13 @@
     />
     <link rel="stylesheet" href="../css/common/common.css" />
     <link rel="stylesheet" href="../css/header/header.css" />
+    <link rel="stylesheet" href="../css/header/header-responsive.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="ommani-top">
-      <div class="navbar-wrapper">
-        <div class="container-xxl">
+      <div class="navbar-wrapper hide-on-moblie-tablet">
+        <div class="container">
           <div
             class="nav-container d-flex align-items-center justify-content-between"
           >
@@ -45,15 +46,15 @@
         </div>
       </div>
       <div class="container-wrapper">
-        <div class="container-xxl d-flex">
+        <div class="container d-flex justify-content-between">
           <div class="header-icon">
-            <img src="../images/web-icon.svg" alt="" />
+            <a href="#"><img src="../images/web-icon.svg" alt="" /></a>
           </div>
-          <div class="location-map d-flex align-items-center">
+          <!-- <div class="location-map d-flex align-items-center">
             <i class="location_icon bi bi-geo-alt"></i>
             <p>Thanh Xuân</p>
             <i class="arrow_icon bi bi-chevron-down"></i>
-          </div>
+          </div> -->
           <div class="search-wrapper">
             <div class="search-block d-flex">
               <select
@@ -80,7 +81,7 @@
                 </button>
               </div>
             </div>
-            <div class="fast-search-key_block">
+            <div class="fast-search-key_block hide-on-moblie-tablet">
               <ul class="list_key-product d-flex align-items-center">
                 <li><a href="#">Trái cây</a></li>
                 <li><a href="#">thịt, trứng</a></li>
@@ -93,14 +94,151 @@
             </div>
           </div>
           <div class="header-icon-right d-flex">
-            <span><i class="bi bi-bell icon"></i></span>
+            <!-- <span><i class="bi bi-bell icon"></i></span>
             <span><i class="bi bi-chat icon"></i></span>
-            <span><i class="bi bi-cart2 icon icon-cart"></i></span>
-            <div class="user-block d-flex align-items-center">
-              <a href="#"><i class="bi bi-person-circle icon"></i></a>
-              <div class="icon-text d-flex flex-column">
-                <a href="#">Đăng nhập</a>
-                <a href="#">Đăng ký</a>
+            <span><i class="bi bi-cart2 icon icon-cart"></i></span> -->
+            <div
+              class="customer-cart position-relative dropdown"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              data-bs-offset="20,20"
+            >
+              <i class="bi bi-cart2 icon icon-cart"></i>
+              <span class="notify-badge position-absolute" id="cart-badge">
+                5
+              </span>
+
+              <div class="dropdown-menu notify-cart-block border-0">
+                <p class="notify-subtitle">Sản phẩm mới thêm</p>
+                <ul class="list-product-cart d-flex flex-column">
+                  <li class="product-cart-item">
+                    <a href="#" class="d-flex align-items-start">
+                      <img
+                        class="product-cart-img img-fluid"
+                        src="../images/home-img/product-cart-img/img-01.png"
+                        alt="product"
+                      />
+                      <div class="product-cart-info d-flex align-items-start">
+                        <p class="product-cart-name">
+                          Bông cải xanh 100g nội địa Nhật Bản và tự nhiên 100%
+                        </p>
+                        <p class="product-cart-price d-flex align-items-center">
+                          <span style="text-decoration: underline">đ</span>
+                          &nbsp;100.000
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="product-cart-item">
+                    <a href="#" class="d-flex align-items-start">
+                      <img
+                        class="product-cart-img img-fluid"
+                        src="../images/home-img/product-cart-img/img-02.png"
+                        alt="product"
+                      />
+                      <div class="product-cart-info d-flex align-items-start">
+                        <p class="product-cart-name">
+                          Bông cải xanh 100g nội địa Nhật Bản và tự nhiên 100%
+                        </p>
+                        <p class="product-cart-price d-flex align-items-center">
+                          <span style="text-decoration: underline">đ</span>
+                          &nbsp;100.000
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="product-cart-item">
+                    <a href="#" class="d-flex align-items-start">
+                      <img
+                        class="product-cart-img img-fluid"
+                        src="../images/home-img/product-cart-img/img-03.png"
+                        alt="product"
+                      />
+                      <div class="product-cart-info d-flex align-items-start">
+                        <p class="product-cart-name">
+                          Bông cải xanh 100g nội địa Nhật Bản và tự nhiên 100%
+                        </p>
+                        <p class="product-cart-price d-flex align-items-center">
+                          <span style="text-decoration: underline">đ</span>
+                          &nbsp;100.000
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="product-cart-item">
+                    <a href="#" class="d-flex align-items-start">
+                      <img
+                        class="product-cart-img img-fluid"
+                        src="../images/home-img/product-cart-img/img-04.png"
+                        alt="product"
+                      />
+                      <div class="product-cart-info d-flex align-items-start">
+                        <p class="product-cart-name">
+                          Bông cải xanh 100g nội địa Nhật Bản và tự nhiên 100%
+                        </p>
+                        <p class="product-cart-price d-flex align-items-center">
+                          <span style="text-decoration: underline">đ</span>
+                          &nbsp;100.000
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="product-cart-item">
+                    <a href="#" class="d-flex align-items-start">
+                      <img
+                        class="product-cart-img img-fluid"
+                        src="../images/home-img/product-cart-img/img-05.png"
+                        alt="product"
+                      />
+                      <div class="product-cart-info d-flex align-items-start">
+                        <p class="product-cart-name">
+                          Bông cải xanh 100g nội địa Nhật Bản và tự nhiên 100%
+                        </p>
+                        <p class="product-cart-price d-flex align-items-center">
+                          <span style="text-decoration: underline">đ</span>
+                          &nbsp;100.000
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <div class="notify-cart-footer d-flex align-items-start">
+                  <p class="qty-product-plus">78 thêm vào giỏ hàng</p>
+                  <button class="btn-show-cart border-0">Xem giỏ hàng</button>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                class="customer-block d-flex align-items-center dropdown"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                data-bs-offset="0, 20"
+              >
+                <!-- <a href="#"><i class="bi bi-person-circle icon"></i></a> -->
+                <img
+                  class="customer-avatar"
+                  src="../images/avatar.jpg"
+                  alt="avatar"
+                />
+                <div class="customer-body d-flex flex-column">
+                  <!-- <a href="#">Đăng nhập</a>
+                  <a href="#">Đăng ký</a> -->
+
+                  <div
+                    class="customer-info d-flex flex-column justify-content-center"
+                  >
+                    <span>Tài khoản</span>
+                    <p class="customer-name">Hoàng Anh</p>
+                  </div>
+                </div>
+                <span><i class="bi bi-chevron-down"></i></span>
+
+                <div class="dropdown-menu menu-setting-customer border-0">
+                  <a class="dropdown-item" href="#">Tài khoản của tôi</a>
+                  <a class="dropdown-item" href="#">Đơn mua</a>
+                  <a class="dropdown-item" href="#">Đăng xuất</a>
+                </div>
               </div>
             </div>
           </div>

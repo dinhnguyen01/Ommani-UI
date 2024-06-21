@@ -11,6 +11,12 @@ body {
   font-family: "Roboto", "Great Vibes", sans-serif; /* Set your base font */
 }
 
+p,
+span {
+  padding: 0;
+  margin: 0;
+}
+
 ul,
 li {
   list-style: none;
