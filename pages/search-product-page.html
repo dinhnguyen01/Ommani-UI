@@ -24,6 +24,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/common/common.css" />
+    <link rel="stylesheet" href="../css/grid/grid.css" />
     <link rel="stylesheet" href="../css/header/header.css" />
     <link rel="stylesheet" href="../css/footer/footer.css" />
     <link
@@ -35,11 +36,339 @@
   <body>
     <div data-include-html="header.html"></div>
     <main>
-      <div class="search-body-wrapper background-wrapper" style="height: 100px">
-        <div class="container">
+      <div
+        class="search-body-wrapper background-wrapper"
+        style="padding-bottom: 42px"
+      >
+        <div class="subbar-top">
+          <div class="container">
+            <div class="subbar-block d-flex">
+              <button
+                class="border-0 bg-transparent subbar-item d-flex align-items-center"
+              >
+                <img src="../images/home-img/li_layout-grid.svg" alt="icon" />
+                <p>Tất cả</p>
+              </button>
+              <button
+                class="border-0 bg-transparent subbar-item d-flex align-items-center"
+              >
+                <img src="../images/home-img/map.svg" alt="icon" />
+                <p>Tìm theo vị trí</p>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="grid wide">
           <div class="row">
-            <div class="col"></div>
-            <div class="col"></div>
+            <div class="col l-2" style="margin-top: 55px">
+              <div class="search-filter">
+                <div class="search-filter__title d-flex align-items-center">
+                  <i class="bi bi-funnel"></i>
+                  <p>Bộ lọc tìm kiếm</p>
+                </div>
+                <div class="search-filter__section">
+                  <p class="search-filter__subtitle">Danh mục</p>
+                  <ul
+                    class="search-filter__list d-flex flex-column align-items-start"
+                  >
+                    <li class="search-filter__item">Trái cây</li>
+                    <li class="search-filter__item">Thịt, trứng</li>
+                    <li class="search-filter__item">Rau, củ, quả</li>
+                    <li class="search-filter__item">Sữa, bơ, phô mai</li>
+                  </ul>
+                </div>
+                <div class="search-filter__section">
+                  <p class="search-filter__subtitle">Phương thức vận chuyển</p>
+                  <div
+                    class="search-filter__checkbox-group d-flex flex-column align-items-start"
+                  >
+                    <div class="search-filter__option">
+                      <input
+                        type="checkbox"
+                        id="express"
+                        class="search-filter__checkbox"
+                      />
+                      <label for="express" class="search-filter__label">
+                        Hỏa tốc
+                      </label>
+                    </div>
+                    <div class="search-filter__option">
+                      <input
+                        type="checkbox"
+                        id="fast"
+                        class="search-filter__checkbox"
+                      />
+                      <label for="fast" class="search-filter__label"
+                        >Nhanh</label
+                      >
+                    </div>
+                    <div class="search-filter__option">
+                      <input
+                        type="checkbox"
+                        id="standard"
+                        class="search-filter__checkbox"
+                      />
+                      <label for="standard" class="search-filter__label">
+                        Tiêu chuẩn
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="search-filter__section">
+                  <p class="search-filter__subtitle">Đánh giá</p>
+                  <ul class="search-filter__list">
+                    <li class="search-filter__item">
+                      <span class="search-filter__stars">
+                        &#9733;&#9733;&#9733;&#9733;&#9733;
+                      </span>
+                      5 sao
+                    </li>
+                    <li class="search-filter__item">
+                      <span class="search-filter__stars">
+                        &#9733;&#9733;&#9733;&#9733;&#9734;
+                      </span>
+                      từ 4 sao
+                    </li>
+                    <li class="search-filter__item">
+                      <span class="search-filter__stars">
+                        &#9733;&#9733;&#9733;&#9734;&#9734;
+                      </span>
+                      từ 3 sao
+                    </li>
+                    <li class="search-filter__item">
+                      <span class="search-filter__stars">
+                        &#9733;&#9733;&#9734;&#9734;&#9734;
+                      </span>
+                      từ 2 sao
+                    </li>
+                    <li class="search-filter__item">
+                      <span class="search-filter__stars">
+                        &#9733;&#9734;&#9734;&#9734;&#9734;
+                      </span>
+                      từ 1 sao
+                    </li>
+                  </ul>
+                </div>
+                <div class="search-filter__section">
+                  <p class="search-filter__subtitle">Khoảng giá</p>
+                  <div class="price-range d-flex flex-column">
+                    <div class="price-range__block d-flex align-items-center">
+                      <input
+                        type="text"
+                        class="price-range__input"
+                        placeholder="từ"
+                      />
+                      <input
+                        type="text"
+                        class="price-range__input"
+                        placeholder="đến"
+                      />
+                    </div>
+                    <button class="price-range__button border-0">
+                      Áp dụng
+                    </button>
+                  </div>
+                </div>
+                <div class="search-filter__section">
+                  <p class="search-filter__subtitle">Thương hiệu</p>
+                  <div
+                    class="search-filter__checkbox-group d-flex flex-column align-items-start"
+                  >
+                    <div class="search-filter__option">
+                      <input
+                        type="checkbox"
+                        id="brandA"
+                        class="search-filter__checkbox"
+                      />
+                      <label for="brandA" class="search-filter__label">
+                        Thương hiệu A
+                      </label>
+                    </div>
+                    <div class="search-filter__option">
+                      <input
+                        type="checkbox"
+                        id="brandB"
+                        class="search-filter__checkbox"
+                      />
+                      <label for="brandB" class="search-filter__label">
+                        Thương hiệu B
+                      </label>
+                    </div>
+                    <div class="search-filter__option">
+                      <input
+                        type="checkbox"
+                        id="brandC"
+                        class="search-filter__checkbox"
+                      />
+                      <label for="brandC" class="search-filter__label">
+                        Thương hiệu C
+                      </label>
+                    </div>
+                    <div class="search-filter__option">
+                      <input
+                        type="checkbox"
+                        id="brandD"
+                        class="search-filter__checkbox"
+                      />
+                      <label for="brandD" class="search-filter__label">
+                        Thương hiệu D
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="search-filter__section">
+                  <p class="search-filter__subtitle">Chất liệu</p>
+                  <div
+                    class="search-filter__checkbox-group d-flex flex-column align-items-start"
+                  >
+                    <div class="search-filter__option">
+                      <input
+                        type="checkbox"
+                        id="materialBlack"
+                        class="search-filter__checkbox"
+                      />
+                      <label for="materialBlack" class="search-filter__label">
+                        Đen
+                      </label>
+                    </div>
+                    <div class="search-filter__option">
+                      <input
+                        type="checkbox"
+                        id="materialWhite"
+                        class="search-filter__checkbox"
+                      />
+                      <label for="materialWhite" class="search-filter__label">
+                        Trắng
+                      </label>
+                    </div>
+                    <div class="search-filter__option">
+                      <input
+                        type="checkbox"
+                        id="materialRed"
+                        class="search-filter__checkbox"
+                      />
+                      <label for="materialRed" class="search-filter__label">
+                        Đỏ
+                      </label>
+                    </div>
+                    <div class="search-filter__option">
+                      <input
+                        type="checkbox"
+                        id="materialGreen"
+                        class="search-filter__checkbox"
+                      />
+                      <label for="materialGreen" class="search-filter__label">
+                        Xanh lá
+                      </label>
+                    </div>
+                    <div class="search-filter__option">
+                      <input
+                        type="checkbox"
+                        id="materialOrange"
+                        class="search-filter__checkbox"
+                      />
+                      <label for="materialOrange" class="search-filter__label">
+                        Cam
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="search-filter__section">
+                  <p class="search-filter__subtitle">Nhà cung cấp</p>
+                  <div
+                    class="search-filter__checkbox-group d-flex flex-column align-items-start"
+                  >
+                    <div class="search-filter__option">
+                      <input
+                        type="checkbox"
+                        id="supplierA"
+                        class="search-filter__checkbox"
+                      />
+                      <label for="supplierA" class="search-filter__label">
+                        Nhà cung cấp A
+                      </label>
+                    </div>
+                    <div class="search-filter__option">
+                      <input
+                        type="checkbox"
+                        id="supplierB"
+                        class="search-filter__checkbox"
+                      />
+                      <label for="supplierB" class="search-filter__label">
+                        Nhà cung cấp B
+                      </label>
+                    </div>
+                    <div class="search-filter__option">
+                      <input
+                        type="checkbox"
+                        id="supplierC"
+                        class="search-filter__checkbox"
+                      />
+                      <label for="supplierC" class="search-filter__label">
+                        Nhà cung cấp C
+                      </label>
+                    </div>
+                    <div class="search-filter__option">
+                      <input
+                        type="checkbox"
+                        id="supplierD"
+                        class="search-filter__checkbox"
+                      />
+                      <label for="supplierD" class="search-filter__label">
+                        Nhà cung cấp D
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <p class="search-filter__remove-all">Xoá tất cả bộ lọc</p>
+              </div>
+            </div>
+            <div class="col l-10" style="margin-top: 14px">
+              <div class="row">
+                <div class="search-results">
+                  <div class="col l-12">
+                    <div class="search-results__header">
+                      <p class="search-results__title">
+                        Tìm kiếm kết quả cho: "Trai cay"
+                      </p>
+                      <div class="search-results__sort">
+                        <span class="search-results__sort-label">
+                          Sắp xếp theo:
+                        </span>
+                        <button
+                          class="search-results__sort-button search-results__sort-button--active"
+                        >
+                          Nổi bật
+                        </button>
+                        <button class="search-results__sort-button">
+                          Mới nhất
+                        </button>
+                        <button class="search-results__sort-button">
+                          Bán chạy
+                        </button>
+                        <select class="search-results__sort-select">
+                          <option>Giá</option>
+                        </select>
+                      </div>
+                      <div class="search-results__pagination">
+                        <span class="search-results__page-info">1/200</span>
+                        <button
+                          class="search-results__page-button search-results__page-button--prev"
+                        ></button>
+                        <button
+                          class="search-results__page-button search-results__page-button--next"
+                        ></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col l-2-4"></div>
+                  <div class="col l-2-4"></div>
+                  <div class="col l-2-4"></div>
+                  <div class="col l-2-4"></div>
+                  <div class="col l-2-4"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

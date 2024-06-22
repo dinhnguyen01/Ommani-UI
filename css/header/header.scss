@@ -79,24 +79,17 @@ $primary-Color: #1ab357;
 
           .select-value {
             width: 100px;
-            padding: 0px 20px 0px 0px;
             margin-right: 12px;
             &:focus {
               outline: none;
               border-color: transparent;
               box-shadow: none;
             }
-
             font-size: 14px;
             font-weight: 600;
             line-height: 16.41px;
             text-align: left;
             color: $primary-Color;
-            background: url("../../images/arrow-icon.svg") no-repeat right
-              center $primary-Color;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
 
             .select-item {
               font-size: 14px;
@@ -187,10 +180,12 @@ $primary-Color: #1ab357;
 
           .notify-cart-block {
             width: 401px;
+            inset: inherit !important;
+            top: 0 !important;
+            right: 0 !important;
             border-radius: 0px;
-            padding: 12px 10px 24px;
+            padding: 12px 0px 24px;
             box-shadow: 0px 0px 15px 0px #0c2f4c26;
-            position: relative;
 
             &::after {
               content: "";
@@ -204,6 +199,7 @@ $primary-Color: #1ab357;
             }
 
             .notify-subtitle {
+              margin-left: 10px;
               margin-bottom: 14px;
               font-size: 14px;
               font-weight: 400;
@@ -216,6 +212,10 @@ $primary-Color: #1ab357;
               margin-bottom: 20px;
               gap: 12px;
               .product-cart-item {
+                padding: 0px 10px;
+                &:hover {
+                  background-color: #f0f0f0;
+                }
                 a {
                   gap: 11px;
                   .product-cart-img {
@@ -251,6 +251,7 @@ $primary-Color: #1ab357;
             }
             .notify-cart-footer {
               gap: 86px;
+              padding: 0px 10px;
               .qty-product-plus {
                 font-size: 14px;
                 font-weight: 400;

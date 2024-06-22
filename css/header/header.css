@@ -69,17 +69,12 @@
 }
 .ommani-top .container-wrapper .container .search-wrapper .search-block .select-value {
   width: 100px;
-  padding: 0px 20px 0px 0px;
   margin-right: 12px;
   font-size: 14px;
   font-weight: 600;
   line-height: 16.41px;
   text-align: left;
   color: #1ab357;
-  background: url("../../images/arrow-icon.svg") no-repeat right center #1ab357;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .ommani-top .container-wrapper .container .search-wrapper .search-block .select-value:focus {
   outline: none;
@@ -164,10 +159,12 @@
 }
 .ommani-top .container-wrapper .container .header-icon-right .customer-cart .notify-cart-block {
   width: 401px;
+  inset: inherit !important;
+  top: 0 !important;
+  right: 0 !important;
   border-radius: 0px;
-  padding: 12px 10px 24px;
+  padding: 12px 0px 24px;
   box-shadow: 0px 0px 15px 0px rgba(12, 47, 76, 0.1490196078);
-  position: relative;
 }
 .ommani-top .container-wrapper .container .header-icon-right .customer-cart .notify-cart-block::after {
   content: "";
@@ -180,6 +177,7 @@
   right: 6px;
 }
 .ommani-top .container-wrapper .container .header-icon-right .customer-cart .notify-cart-block .notify-subtitle {
+  margin-left: 10px;
   margin-bottom: 14px;
   font-size: 14px;
   font-weight: 400;
@@ -190,6 +188,12 @@
 .ommani-top .container-wrapper .container .header-icon-right .customer-cart .notify-cart-block .list-product-cart {
   margin-bottom: 20px;
   gap: 12px;
+}
+.ommani-top .container-wrapper .container .header-icon-right .customer-cart .notify-cart-block .list-product-cart .product-cart-item {
+  padding: 0px 10px;
+}
+.ommani-top .container-wrapper .container .header-icon-right .customer-cart .notify-cart-block .list-product-cart .product-cart-item:hover {
+  background-color: #f0f0f0;
 }
 .ommani-top .container-wrapper .container .header-icon-right .customer-cart .notify-cart-block .list-product-cart .product-cart-item a {
   gap: 11px;
@@ -224,6 +228,7 @@
 }
 .ommani-top .container-wrapper .container .header-icon-right .customer-cart .notify-cart-block .notify-cart-footer {
   gap: 86px;
+  padding: 0px 10px;
 }
 .ommani-top .container-wrapper .container .header-icon-right .customer-cart .notify-cart-block .notify-cart-footer .qty-product-plus {
   font-size: 14px;
