@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="../css/header/header.css" />
     <link rel="stylesheet" href="../css/footer/footer.css" />
     <link rel="stylesheet" href="../css/home/home.css" />
+    <link rel="stylesheet" href="../css/header/header-responsive.css" />
+
     <title>Home</title>
   </head>
   <body>
@@ -198,7 +200,7 @@
           <section class="reputation-store-wrapper">
             <p class="section-heading">Top cửa hàng uy tín</p>
             <div class="store-card_container">
-              <div class="store-item card">
+              <a href="#" class="store-item card">
                 <img
                   src="../images/home-img/store/aan.png"
                   class="card-img-top img-fluid"
@@ -221,8 +223,8 @@
                     >Đã chứng nhận</span
                   >
                 </div>
-              </div>
-              <div class="store-item card">
+              </a>
+              <a href="#" class="store-item card">
                 <img
                   src="../images/home-img/store/nestle.png"
                   class="card-img-top img-fluid"
@@ -245,8 +247,8 @@
                     >Đã chứng nhận</span
                   >
                 </div>
-              </div>
-              <div class="store-item card">
+              </a>
+              <a href="#" class="store-item card">
                 <img
                   src="../images/home-img/store/top-market.png"
                   class="card-img-top img-fluid"
@@ -269,8 +271,8 @@
                     >Đã chứng nhận</span
                   >
                 </div>
-              </div>
-              <div class="store-item card">
+              </a>
+              <a href="#" class="store-item card">
                 <img
                   src="../images/home-img/store/fuji-mart.png"
                   class="card-img-top img-fluid"
@@ -293,8 +295,8 @@
                     >Đã chứng nhận</span
                   >
                 </div>
-              </div>
-              <div class="store-item card">
+              </a>
+              <a href="#" class="store-item card">
                 <img
                   src="../images/home-img/store/vitot.png"
                   class="card-img-top img-fluid"
@@ -317,8 +319,8 @@
                     >Đã chứng nhận</span
                   >
                 </div>
-              </div>
-              <div class="store-item card">
+              </a>
+              <a href="#" class="store-item card">
                 <img
                   src="../images/home-img/store/dacsanxunghe.png"
                   class="card-img-top img-fluid"
@@ -341,7 +343,7 @@
                     >Đã chứng nhận</span
                   >
                 </div>
-              </div>
+              </a>
             </div>
           </section>
           <section
@@ -365,8 +367,10 @@
 
     <div data-include-html="footer.html"></div>
 
+    <script src="../js/select-menu.js" defer></script>
     <script src="../js/load-html.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
     <script type="module">
       import data from "../js/data-product-category.js";
       import jsonData from "../js/explore-card-data.js";

@@ -215,6 +215,10 @@ $text-section-heading: #1a1a1a;
         column-gap: 41px;
         .item-category {
           gap: 14px;
+          &:hover {
+            transform: scale(1.2);
+            transition: all 0.5s;
+          }
           img {
             height: 80px;
           }
@@ -377,6 +381,12 @@ $text-section-heading: #1a1a1a;
         font-weight: 500;
         line-height: 18.75px;
         color: #2e9dff;
+
+        &:hover {
+          background-color: #2e9dff;
+          color: white;
+          transition: all 0.5s;
+        }
       }
     }
   }

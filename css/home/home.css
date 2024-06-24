@@ -188,6 +188,10 @@
 .home-wrapper .container .product-category-wrapper .product-category-list .item-category {
   gap: 14px;
 }
+.home-wrapper .container .product-category-wrapper .product-category-list .item-category:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
 .home-wrapper .container .product-category-wrapper .product-category-list .item-category img {
   height: 80px;
 }
@@ -334,6 +338,11 @@
   font-weight: 500;
   line-height: 18.75px;
   color: #2e9dff;
+}
+.home-wrapper .container .explore-wrapper .more-show:hover {
+  background-color: #2e9dff;
+  color: white;
+  transition: all 0.5s;
 }
 
 /*# sourceMappingURL=home.css.map */

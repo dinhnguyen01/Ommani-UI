@@ -59,36 +59,83 @@
   font-size: 7px;
 }
 .ommani-top .container-wrapper .container .search-wrapper {
-  width: calc(100% - 700px);
+  width: calc(100% - 425px);
 }
 .ommani-top .container-wrapper .container .search-wrapper .search-block {
   padding: 0px 0px 0px 12px;
   border-radius: 8px;
   background-color: white;
 }
-.ommani-top .container-wrapper .container .search-wrapper .search-block .select-value {
-  width: 100px;
-  margin-right: 12px;
+.ommani-top .container-wrapper .container .search-wrapper .search-block .select-menu {
+  width: 90px;
+  position: relative;
+}
+.ommani-top .container-wrapper .container .search-wrapper .search-block .select-menu .select-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: white;
   font-size: 14px;
   font-weight: 600;
   line-height: 16.41px;
   text-align: left;
   color: #1ab357;
+  cursor: pointer;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.ommani-top .container-wrapper .container .search-wrapper .search-block .select-value:focus {
-  outline: none;
-  border-color: transparent;
-  box-shadow: none;
+.ommani-top .container-wrapper .container .search-wrapper .search-block .select-menu .select-btn i {
+  font-size: 13px;
 }
-.ommani-top .container-wrapper .container .search-wrapper .search-block .select-value .select-item {
+.ommani-top .container-wrapper .container .search-wrapper .search-block .select-menu .select-btn i::before {
+  font-weight: 600 !important;
+}
+.ommani-top .container-wrapper .container .search-wrapper .search-block .select-menu .options {
+  display: none;
+  position: absolute;
+  background-color: white;
+  top: 30px;
+  left: -11px;
+  width: 200px;
+  box-shadow: 0px 0px 15px 0px rgba(12, 47, 76, 0.1490196078);
+  border-radius: 3px;
+  z-index: 10;
+}
+.ommani-top .container-wrapper .container .search-wrapper .search-block .select-menu .options .option {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.ommani-top .container-wrapper .container .search-wrapper .search-block .select-menu .options .option:hover {
+  background-color: #f0f0f0;
+  transition: all 0.5s;
+}
+.ommani-top .container-wrapper .container .search-wrapper .search-block .select-menu .options .option:hover:first-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.ommani-top .container-wrapper .container .search-wrapper .search-block .select-menu .options .option:hover:last-child {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.ommani-top .container-wrapper .container .search-wrapper .search-block .select-menu .options .option:hover .option-text {
+  color: #1ab357;
+  font-weight: 600;
+}
+.ommani-top .container-wrapper .container .search-wrapper .search-block .select-menu .options .option .option-text {
   font-size: 14px;
   font-weight: 400;
   line-height: 16.41px;
   text-align: left;
   color: black;
 }
+.ommani-top .container-wrapper .container .search-wrapper .search-block .select-menu.active .options {
+  display: block;
+}
 .ommani-top .container-wrapper .container .search-wrapper .search-block .search-input {
-  width: calc(100% - 100px);
+  width: calc(100% - 90px);
 }
 .ommani-top .container-wrapper .container .search-wrapper .search-block .search-input .space-border {
   height: 14px;
@@ -128,6 +175,9 @@
   line-height: 14.06px;
   text-align: left;
   color: white;
+}
+.ommani-top .container-wrapper .container .search-wrapper .fast-search-key_block .list_key-product li:hover {
+  text-decoration: underline;
 }
 .ommani-top .container-wrapper .container .header-icon-right {
   gap: 20px;
