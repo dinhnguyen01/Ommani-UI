@@ -47,7 +47,6 @@ $primary-Color: #1ab357;
       // .header-icon {
       // }
       .location-map {
-        margin-right: 35px;
         cursor: pointer;
         p {
           font-size: 12px;
@@ -71,7 +70,8 @@ $primary-Color: #1ab357;
         }
       }
       .search-wrapper {
-        width: calc(100% - 425px);
+        // width: calc(100% - 425px);
+        width: calc(100% - 700px);
         .search-block {
           padding: 0px 0px 0px 12px;
           border-radius: 8px;

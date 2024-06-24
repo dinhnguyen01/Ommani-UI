@@ -19,8 +19,8 @@
   margin-right: 0;
 }
 .row.sm-gutter {
-  margin-left: calc(-1 * 5px);
-  margin-right: calc(-1 * 5px);
+  margin-left: calc(-1 * 6px);
+  margin-right: calc(-1 * 6px);
 }
 
 .col {
@@ -32,8 +32,8 @@
   padding-right: 0;
 }
 .row.sm-gutter .col {
-  padding-left: calc(5px);
-  padding-right: calc(5px);
+  padding-left: calc(6px);
+  padding-right: calc(6px);
 }
 
 .c-0 {
@@ -287,16 +287,16 @@
     margin-right: calc(-1 * 15px / 2);
   }
   .row.sm-gutter {
-    margin-left: calc(-1 * 5px);
-    margin-right: calc(-1 * 5px);
+    margin-left: calc(-1 * 6px);
+    margin-right: calc(-1 * 6px);
   }
   .col {
     padding-left: calc(15px / 2);
     padding-right: calc(15px / 2);
   }
   .row.sm-gutter .col {
-    padding-left: calc(5px);
-    padding-right: calc(5px);
+    padding-left: calc(6px);
+    padding-right: calc(6px);
   }
   .l-0 {
     display: none;
@@ -441,16 +441,16 @@
     margin-right: calc(-1 * 8px / 2);
   }
   .wide .row.sm-gutter {
-    margin-left: calc(-1 * 5px);
-    margin-right: calc(-1 * 5px);
+    margin-left: calc(-1 * 6px);
+    margin-right: calc(-1 * 6px);
   }
   .wide .col {
     padding-left: calc(8px / 2);
     padding-right: calc(8px / 2);
   }
   .row.sm-gutter .wide .col {
-    padding-left: calc(5px);
-    padding-right: calc(5px);
+    padding-left: calc(6px);
+    padding-right: calc(6px);
   }
   .wide .l-0 {
     display: none;

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      href="/node_modules/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/common/common.css" />
+    <link rel="stylesheet" href="../css/grid/grid.css" />
+    <link rel="stylesheet" href="../css/header/header.css" />
+    <link rel="stylesheet" href="../css/footer/footer.css" />
+    <link rel="stylesheet" href="../css/filter-store/filter-store.css" />
+    <title>Tìm kiếm cửa hàng</title>
+  </head>
+  <body>
+    <div data-include-html="header.html"></div>
+    <main>
+      <div
+        class="filter-store-wrapper background-wrapper"
+        style="padding-bottom: 42px"
+      >
+        <div class="subbar-top">
+          <div class="container">
+            <div class="subbar-block d-flex">
+              <button
+                class="border-0 bg-transparent subbar-item d-flex align-items-center"
+              >
+                <img src="../images/home-img/li_layout-grid.svg" alt="icon" />
+                <p>Tất cả</p>
+              </button>
+              <button
+                class="border-0 bg-transparent subbar-item d-flex align-items-center"
+              >
+                <img src="../images/home-img/map.svg" alt="icon" />
+                <p>Tìm theo vị trí</p>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="grid wide">
+          <div class="row">
+            <div class="col l-12">
+              <div class="banner__filter-store">
+                <div class="banner-logo">
+                  <img
+                    src="../images/search-filter-store/LOGO.svg"
+                    alt="logo"
+                  />
+                </div>
+                <img
+                  class="banner-img"
+                  src="../images/search-filter-store/banner-01.png"
+                  alt="banner"
+                />
+              </div>
+            </div>
+            <div class="col l-12">
+              <div
+                class="filter-bar d-flex flex-column justify-content-between align-items-center"
+              >
+                <p class="filter-bar__title">Lọc theo vị trí</p>
+                <div class="filter-bar__select d-flex">
+                  <div class="select-item">
+                    <select name="" id="">
+                      <option value="">Tỉnh/ Thành phố</option>
+                      <option value="">Hà Nội</option>
+                      <option value="">Nam Định</option>
+                    </select>
+                    <i class="bi bi-caret-down-fill"></i>
+                  </div>
+                  <div class="select-item">
+                    <select name="" id="">
+                      <option value="">Quận/ Huyện</option>
+                      <option value="">Thanh Xuân</option>
+                      <option value="">Hoàng Mai</option>
+                    </select>
+                    <i class="bi bi-caret-down-fill"></i>
+                  </div>
+                  <div class="select-item">
+                    <select name="" id="">
+                      <option value="">Xã</option>
+                      <option value="">Nghĩa Lạc</option>
+                      <option value="">Nghĩa Thành</option>
+                    </select>
+                    <i class="bi bi-caret-down-fill"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col l-12">
+              <div class="store-wrapper d-flex flex-column align-items-center">
+                <div class="row store-container no-gutters sm-gutter"></div>
+                <button class="more-show text-uppercase">Xem thêm</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div data-include-html="footer.html"></div>
+    <script src="../js/load-html.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module">
+      import jsonData from "../js/data-store-filter.js";
+      const storeItemContainer = document.querySelector(".store-container");
+
+      const store_item = jsonData.map((storeItem, index) => {
+        const storeKey = Object.keys(storeItem);
+        const storeData = storeItem[storeKey];
+        return `              
+        <div class="col l-4" style="padding-left: 5px; padding-right: 5px"><div class="store-item w-100 d-flex flex-column">
+                <div class="item-header d-flex align-items-start">
+                  <img
+                    class="img-store"
+                    src=${storeData.img_store}
+                    alt="img"
+                  />
+                  <div
+                    class="item-heading_block d-flex flex-column justify-content-start"
+                  >
+                    <p class="name-store">Ommani Mall Thạch Bàn Long</p>
+                    <div class="rating-store d-flex align-items-center">
+                      <i class="bi bi-star-fill"></i>
+                      <p>4.8 (11k+)<span>TP.Hồ Chí Minh</span></p>
+                    </div>
+                    <div class="badge-brand-img d-flex align-items-center">
+                      <img
+                        class="img-fluid"
+                        src="../images/home-img/badge-brand-img/iso.png"
+                        alt="img-badge"
+                      />
+                      <img
+                        class="img-fluid"
+                        src="../images/home-img/badge-brand-img/fssc.png"
+                        alt="img-badge"
+                      />
+                      <img
+                        class="img-fluid"
+                        src="../images/home-img/badge-brand-img/haccp.png"
+                        alt="img-badge"
+                      />
+                      <img
+                        class="img-fluid"
+                        src="../images/home-img/badge-brand-img/gmp.png"
+                        alt="img-badge"
+                      />
+                      <img
+                        class="img-fluid"
+                        src="../images/home-img/badge-brand-img/brcfood.png"
+                        alt="img-badge"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="item-body">
+                  ${storeData.img_product
+                    .map((img, index) => {
+                      return `<a class="product-store_block" href="#">
+                      <img
+                        class="img-fluid product-img"
+                        src=${img}
+                        alt="product-img"
+                      />
+                    <div
+                      class="product-content d-flex flex-column justify-content-start"
+                    >
+                      <p class="product-name mb-0">
+                        Xúc Xích Đức Việt gói 16 hông khói siêu ngon
+                      </p>
+                      <p class="product-sold mb-0">Đã bán 12</p>
+                      <p class="product-price mb-0">89.000 <span>đ</span></p>
+                    </div>
+                  </a>`;
+                    })
+                    .join("")}
+                </div>
+              </div>
+              </div>`;
+      });
+
+      storeItemContainer.innerHTML = store_item.join("");
+    </script>
+  </body>
+</html>

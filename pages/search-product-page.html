@@ -58,6 +58,19 @@
             </div>
           </div>
         </div>
+        <section class="product-category-wrapper position-relative">
+          <div class="btn-action position-absolute">
+            <button class="pre-btn button-block border-0">
+              <i class="bi bi-chevron-left"> </i>
+            </button>
+            <button class="next-btn button-block border-0">
+              <i class="bi bi-chevron-right"></i>
+            </button>
+          </div>
+          <div class="container">
+            <div class="product-category-list"></div>
+          </div>
+        </section>
         <div class="grid wide">
           <div class="row">
             <div class="col l-2" style="margin-top: 55px">
@@ -324,48 +337,153 @@
               </div>
             </div>
             <div class="col l-10" style="margin-top: 14px">
-              <div class="row">
+              <div class="row no-gutters">
                 <div class="search-results">
                   <div class="col l-12">
                     <div class="search-results__header">
                       <p class="search-results__title">
-                        Tìm kiếm kết quả cho: "Trai cay"
+                        Tìm kiếm kết quả cho: "<span>Trai cay</span>"
                       </p>
-                      <div class="search-results__sort">
-                        <span class="search-results__sort-label">
-                          Sắp xếp theo:
-                        </span>
-                        <button
-                          class="search-results__sort-button search-results__sort-button--active"
+                      <div
+                        class="search-results__sort d-flex align-items-center justify-content-between"
+                      >
+                        <div
+                          class="d-flex align-items-center search-results__sort-left"
                         >
-                          Nổi bật
-                        </button>
-                        <button class="search-results__sort-button">
-                          Mới nhất
-                        </button>
-                        <button class="search-results__sort-button">
-                          Bán chạy
-                        </button>
-                        <select class="search-results__sort-select">
-                          <option>Giá</option>
-                        </select>
-                      </div>
-                      <div class="search-results__pagination">
-                        <span class="search-results__page-info">1/200</span>
-                        <button
-                          class="search-results__page-button search-results__page-button--prev"
-                        ></button>
-                        <button
-                          class="search-results__page-button search-results__page-button--next"
-                        ></button>
+                          <span class="search-results__sort-label">
+                            Sắp xếp theo:
+                          </span>
+                          <div
+                            class="d-flex align-items-center sort-button__container"
+                          >
+                            <button
+                              class="search-results__sort-button search-results__sort-button--active"
+                            >
+                              Nổi bật
+                            </button>
+                            <button class="search-results__sort-button">
+                              Mới nhất
+                            </button>
+                            <button class="search-results__sort-button">
+                              Bán chạy
+                            </button>
+                            <div
+                              class="search-results__sort-select d-flex align-items-center"
+                            >
+                              <select class="">
+                                <option>Giá</option>
+                                <option>500.000đ</option>
+                                <option>1.000.000đ</option>
+                                <option>2.000.000đ</option>
+                              </select>
+                              <i class="bi bi-caret-down-fill"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="search-results__pagination d-flex">
+                          <p class="search-results__page-info">
+                            <span>1</span>/200
+                          </p>
+                          <div
+                            class="search-results__page-button--block d-flex align-items-center"
+                          >
+                            <span
+                              class="search-results__page-button search-results__page-button--prev"
+                            >
+                              <i class="bi bi-chevron-left"></i>
+                            </span>
+                            <span
+                              class="search-results__page-button search-results__page-button--next"
+                            >
+                              <i class="bi bi-chevron-right"></i>
+                            </span>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col l-2-4"></div>
-                  <div class="col l-2-4"></div>
-                  <div class="col l-2-4"></div>
-                  <div class="col l-2-4"></div>
-                  <div class="col l-2-4"></div>
+                  <div class="col l-12">
+                    <div class="search-results__list-products">
+                      <div
+                        class="row no-gutters sm-gutter get-list-product"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="col l-12">
+                    <div
+                      class="d-flex justify-content-center"
+                      style="margin-top: 14px"
+                    >
+                      <ul
+                        class="pagination__list-product d-flex align-items-center"
+                      >
+                        <li class="pagination__item">
+                          <a
+                            href="#"
+                            class="pagination__link pagination__link--prev"
+                          >
+                            <i class="bi bi-chevron-left"></i>
+                          </a>
+                        </li>
+                        <li class="pagination__item">
+                          <a
+                            href="#"
+                            class="pagination__link pagination__link--page pagination__link--active"
+                          >
+                            1
+                          </a>
+                        </li>
+                        <li class="pagination__item">
+                          <a
+                            href="#"
+                            class="pagination__link pagination__link--page"
+                          >
+                            2
+                          </a>
+                        </li>
+                        <li class="pagination__item">
+                          <a
+                            href="#"
+                            class="pagination__link pagination__link--page"
+                          >
+                            3
+                          </a>
+                        </li>
+                        <li class="pagination__item">
+                          <a
+                            href="#"
+                            class="pagination__link pagination__link--page"
+                          >
+                            4
+                          </a>
+                        </li>
+                        <li class="pagination__item">
+                          <a
+                            href="#"
+                            class="pagination__link pagination__link--page"
+                          >
+                            5
+                          </a>
+                        </li>
+                        <li class="pagination__item">
+                          <a
+                            href="#"
+                            class="pagination__link pagination__link--page"
+                          >
+                            ...
+                          </a>
+                        </li>
+                        <li class="pagination__item">
+                          <a
+                            href="#"
+                            class="pagination__link pagination__link--next"
+                          >
+                            <i class="bi bi-chevron-right"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -377,5 +495,186 @@
 
     <script src="../js/load-html.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module">
+      import search_filter_products from "../js/data-search-filter.js";
+
+      const list_products_block = document.querySelector(".get-list-product");
+      const key_search = document.querySelector(
+        ".search-results__title > span"
+      );
+      const paginationBar = document.querySelector(".pagination__list-product");
+
+      const product_html = search_filter_products
+        .map((product, index) => {
+          return `<div class="col l-2-4">
+                          <div class="search-results__product-item bg-white">
+                            <div
+                              class="product-item__images-wrapper position-relative"
+                            >
+                              <img
+                                class="img-fluid"
+                                style="width: 100%"
+                                src=${product.img}
+                                alt="img-product"
+                              />
+                              <div
+                                class="product-item__badge-brand d-flex position-absolute"
+                              >
+                                <span>Mall</span>
+                                <img
+                                  src="../images/search-filter-product/badge-brand/iso.png"
+                                  alt="badge-img"
+                                />
+                                <img
+                                  src="../images/search-filter-product/badge-brand/fssc.png"
+                                  alt="badge-img"
+                                />
+                                <img
+                                  src="../images/search-filter-product/badge-brand/haccp.png"
+                                  alt="badge-img"
+                                />
+                              </div>
+                              <div
+                                class="product-item__discount position-absolute"
+                              >
+                                <span>14%</span>
+                              </div>
+                              <div
+                                class="product-item__tags position-absolute d-flex align-items-center"
+                              >
+                                <span>7.7</span>
+                                <p class="text-uppercase">Ommani freeship+</p>
+                              </div>
+                            </div>
+                            <div
+                              class="product-item__details d-flex flex-column"
+                            >
+                              <p class="product-item__title">
+                                Bông cải xanh 100g nội địa Nhật Bản và tự nhiên
+                                100%
+                              </p>
+                              <div
+                                class="product-item__info d-flex flex-column"
+                              >
+                                <div
+                                  class="d-flex align-items-center justify-content-between"
+                                >
+                                  <p class="product-item__price">
+                                    87.000
+                                    <span style="text-decoration: underline"
+                                      >đ</span
+                                    >
+                                  </p>
+
+                                  <img
+                                    src="../images/search-filter-product/icon/transport.svg"
+                                    alt="icon-trans"
+                                  />
+                                </div>
+                                <div
+                                  class="d-flex align-items-center"
+                                  style="gap: 6px"
+                                >
+                                  <span class="product-item__stars">
+                                    &#9733;&#9733;&#9733;&#9733;&#9733;
+                                  </span>
+                                  <span class="line-space"></span>
+                                  <p class="product-item__sold">1.6k đã bán</p>
+                                </div>
+                              </div>
+                              <div class="product-item__location">
+                                <p>TP. Hồ Chí Minh</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>`;
+        })
+        .join("");
+
+      const no_product_html = `<div
+                          class="no-product d-flex align-items-center justify-content-center flex-column"
+                          style="
+                            height: 390px;
+                            background-color: white;
+                            gap: 24px;
+                            border-radius: 16px;
+                          "
+                        >
+                          <img
+                            src="../images/search-filter-product/icon/search-empty-icon.svg"
+                            alt=""
+                          />
+                          <p
+                            style="
+                              font-size: 20px;
+                              font-weight: 400;
+                              line-height: 20px;
+                              text-align: center;
+                              color: #888888;
+                            "
+                          >
+                            Không có sản phẩm phù hợp với nội dung tìm kiếm
+                          </p>
+                        </div>`;
+
+      if (key_search.textContent === "Trai cay") {
+        list_products_block.innerHTML = product_html;
+      } else if (key_search.textContent === "Xe hoi") {
+        list_products_block.innerHTML = no_product_html;
+        if (paginationBar) {
+          paginationBar.style.cssText = "display: none !important;";
+        }
+      }
+
+      import data from "../js/data-product-category.js";
+
+      const productCategoryList = document.querySelector(
+        ".product-category-list"
+      );
+
+      const item_category = data.map((item, index) => {
+        return `<a
+                href="#"
+                class="item-category d-flex flex-column align-items-center justify-content-start item-search"
+              >
+                <img
+                  class="img-fluid"
+                  src=${item.url}
+                  alt="img"
+                />
+                <p class="category-title">${item.title}</p>
+              </a>`;
+      });
+      productCategoryList.innerHTML = item_category.join("");
+
+      const exploreItemContainer = document.querySelector(
+        ".explore-item-container"
+      );
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const preBtn = document.querySelector(".pre-btn");
+        const nextBtn = document.querySelector(".next-btn");
+        const productList = document.querySelector(".product-category-list");
+
+        const scrollAmount = 100; // Adjust this value as needed
+
+        preBtn.addEventListener("click", function () {
+          productList.scrollBy({
+            top: 0,
+            left: -scrollAmount,
+            behavior: "smooth",
+          });
+        });
+
+        nextBtn.addEventListener("click", function () {
+          productList.scrollBy({
+            top: 0,
+            left: scrollAmount,
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
   </body>
 </html>

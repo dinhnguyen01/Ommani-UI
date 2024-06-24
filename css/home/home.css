@@ -113,6 +113,7 @@
   line-height: 25.78px;
   text-align: left;
   color: #1a1a1a;
+  margin-bottom: 19px;
 }
 .home-wrapper .container .reputation-store-wrapper .store-card_container {
   display: grid;
@@ -326,16 +327,13 @@
   width: 241px;
   height: 41px;
   padding: 12px 45px 10px 45px;
-  gap: 10px;
   border-radius: 6px;
   border: 1px solid #2e9dff;
   background-color: white;
-  font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
   line-height: 18.75px;
   color: #2e9dff;
-  float: right;
 }
 
 /*# sourceMappingURL=home.css.map */

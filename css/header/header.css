@@ -38,7 +38,6 @@
   padding: 0;
 }
 .ommani-top .container-wrapper .container .location-map {
-  margin-right: 35px;
   cursor: pointer;
 }
 .ommani-top .container-wrapper .container .location-map p {
@@ -60,7 +59,7 @@
   font-size: 7px;
 }
 .ommani-top .container-wrapper .container .search-wrapper {
-  width: calc(100% - 425px);
+  width: calc(100% - 700px);
 }
 .ommani-top .container-wrapper .container .search-wrapper .search-block {
   padding: 0px 0px 0px 12px;
