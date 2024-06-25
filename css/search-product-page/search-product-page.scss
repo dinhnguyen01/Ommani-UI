@@ -116,6 +116,7 @@ $color-6faf17: #6faf17;
   }
 
   .search-filter {
+    margin-top: 55px;
     .search-filter__title {
       gap: 10px;
       .bi::before {
@@ -234,9 +235,108 @@ $color-6faf17: #6faf17;
     }
   }
 
+  .search-sort-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    .search-container__moblie {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: space-between;
+      .btn__back-icon {
+        i {
+          font-size: 25px;
+          color: #1ab357;
+        }
+      }
+
+      .search-input__block {
+        background-color: #f0f0f0;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        padding-left: 12px;
+
+        input {
+          width: 266px;
+          padding: 12px;
+          border: 0;
+          background-color: transparent;
+
+          &::placeholder {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16.41px;
+            text-align: left;
+            color: #adacb9;
+          }
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+
+      .btn__filter {
+        position: relative;
+        i {
+          font-size: 25px;
+          color: #1ab357;
+          line-height: 1;
+        }
+
+        p {
+          position: absolute;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 14.06px;
+          color: #1ab357;
+          right: 0;
+          top: 25px;
+        }
+      }
+    }
+
+    .sort-options__moblie {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+
+      .sort-option {
+        width: 84px;
+        height: 26px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.41px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &.active {
+          text-decoration: underline;
+          color: #37bd6c;
+          font-weight: 500;
+        }
+
+        span {
+          i {
+            font-size: 10px;
+            color: #d9d9d9;
+            line-height: 1;
+          }
+        }
+      }
+    }
+  }
+
   .search-results {
     padding-left: 0;
     padding-right: 0;
+    margin-top: 14px;
     .search-results__header {
       margin-bottom: 17px;
       .search-results__title {

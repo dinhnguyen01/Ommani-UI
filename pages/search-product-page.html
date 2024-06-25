@@ -77,8 +77,9 @@
           </div>
         </section>
         <div class="grid wide">
-          <div class="row">
-            <div class="col l-2 c-0" style="margin-top: 55px">
+          <div class="row position-relative">
+            <div class="col l-0 c-12 overlay" onclick="off()"></div>
+            <div class="col l-2 c-6 filter-mobile">
               <div class="search-filter">
                 <div class="search-filter__title d-flex align-items-center">
                   <i class="bi bi-funnel"></i>
@@ -341,12 +342,44 @@
                 <p class="search-filter__remove-all">Xoá tất cả bộ lọc</p>
               </div>
             </div>
-            <div
-              class="col l-10 c-12 product-container"
-              style="margin-top: 14px"
-            >
+            <div class="col l-0 c-12 bg-white" style="padding: 10px 15px">
+              <div class="search-sort-mobile">
+                <div class="search-container__moblie">
+                  <a href="#" class="btn__back-icon">
+                    <i class="bi bi-arrow-left-short"></i>
+                  </a>
+                  <div class="search-input__block">
+                    <img src="../images/search-icon-mobile.svg" alt="" />
+                    <input type="text" placeholder="Bông cải xanh" />
+                  </div>
+
+                  <button
+                    class="btn__filter border-0 bg-transparent"
+                    onclick="on()"
+                  >
+                    <i class="bi bi-funnel"></i>
+                    <p>lọc</p>
+                  </button>
+                </div>
+                <div class="sort-options__moblie">
+                  <div class="sort-option active">Liên quan</div>
+                  <div class="sort-option">Mới nhất</div>
+                  <div class="sort-option">Bán chạy</div>
+                  <div class="sort-option" style="gap: 25px">
+                    <p>Giá</p>
+                    <span
+                      class="d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <i class="bi bi-caret-up-fill"></i>
+                      <i class="bi bi-caret-down-fill"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col l-10 c-12 product-container">
               <div class="search-results">
-                <div class="row no-gutters">
+                <div class="row">
                   <div class="col l-12 c-0">
                     <div class="search-results__header">
                       <p class="search-results__title">
@@ -684,6 +717,21 @@
           });
         });
       });
+    </script>
+
+    <script>
+      const btn_filter = document.querySelector(".btn__filter");
+      const filter_block = document.querySelector(".filter-mobile");
+      const overlay = document.querySelector(".overlay");
+      function on() {
+        overlay.style.display = "block";
+        filter_block.style.right = "0%";
+      }
+
+      function off() {
+        overlay.style.display = "none";
+        filter_block.style.right = "-50%";
+      }
     </script>
   </body>
 </html>

@@ -95,17 +95,17 @@ $container-max-width: 1320px;
     padding-right: calc(#{$gutter-width} / 2);
   }
 
-  .m-0 {
+  .t-0 {
     @include display-none;
   }
 
   @for $i from 1 through 12 {
-    .m-#{$i} {
+    .t-#{$i} {
       @include display-block;
     }
   }
 
-  @include responsive-column("m", 1, 12);
+  @include responsive-column("t", 1, 12);
 }
 
 @media (min-width: 1113px) {
