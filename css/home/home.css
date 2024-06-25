@@ -39,23 +39,22 @@
   border: 1px solid white;
   background-clip: initial;
 }
-.home-wrapper .container .slider-wrapper .carousel .carousel-inner .carousel-item img {
-  height: 410px;
-}
 .home-wrapper .container .categories-icon-wrapper {
-  height: 120px;
+  display: flex;
+  justify-content: center;
 }
-.home-wrapper .container .categories-icon-wrapper .categories-block .category-list {
+.home-wrapper .container .categories-icon-wrapper .category-list {
   background-color: white;
+  width: fit-content;
   gap: 90px;
   padding: 16px 32px 28px 32px;
 }
-.home-wrapper .container .categories-icon-wrapper .categories-block .category-list .category-item {
+.home-wrapper .container .categories-icon-wrapper .category-list .category-item {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.home-wrapper .container .categories-icon-wrapper .categories-block .category-list .category-item p {
+.home-wrapper .container .categories-icon-wrapper .category-list .category-item p {
   margin-bottom: 0;
   margin-top: 12.6px;
   font-size: 14px;
@@ -98,7 +97,7 @@
   right: 0;
 }
 .home-wrapper .container .banner-wrapper .banner-item img {
-  height: 220px;
+  height: auto;
   width: 100%;
 }
 .home-wrapper .container .reputation-store-wrapper {
@@ -116,12 +115,13 @@
   margin-bottom: 19px;
 }
 .home-wrapper .container .reputation-store-wrapper .store-card_container {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 .home-wrapper .container .reputation-store-wrapper .store-card_container .store-item .card-body {
   gap: 12px;
+  padding: 4px 10px 15px;
 }
 .home-wrapper .container .reputation-store-wrapper .store-card_container .store-item .card-body .cart-heading {
   gap: 4px;
@@ -166,8 +166,7 @@
   border-radius: 3px;
   background-color: white;
   margin-top: 24px;
-  padding: 12px 14px 0px 14px;
-  height: 376px;
+  padding: 12px 12px 20px;
   gap: 20px;
 }
 .home-wrapper .container .product-category-wrapper .section-heading {
@@ -189,8 +188,8 @@
   gap: 14px;
 }
 .home-wrapper .container .product-category-wrapper .product-category-list .item-category:hover {
-  transform: scale(1.2);
-  transition: all 0.5s;
+  transform: scale(1.05);
+  transition: all 0.3s;
 }
 .home-wrapper .container .product-category-wrapper .product-category-list .item-category img {
   height: 80px;
@@ -290,7 +289,6 @@
   border-radius: 3px;
 }
 .home-wrapper .container .explore-wrapper .explore-item-container .explore-item .item-body .product-store_block .product-content {
-  width: 120px;
   gap: 6px;
 }
 .home-wrapper .container .explore-wrapper .explore-item-container .explore-item .item-body .product-store_block .product-content .product-name {

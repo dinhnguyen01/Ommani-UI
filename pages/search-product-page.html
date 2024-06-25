@@ -27,9 +27,14 @@
     <link rel="stylesheet" href="../css/grid/grid.css" />
     <link rel="stylesheet" href="../css/header/header.css" />
     <link rel="stylesheet" href="../css/footer/footer.css" />
+    <link rel="stylesheet" href="../css/footer/footer-responisve.css" />
     <link
       rel="stylesheet"
       href="../css/search-product-page/search-product-page.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../css/search-product-page/search-product_responsive.css"
     />
     <title>Tìm kiếm sản phẩm</title>
   </head>
@@ -73,7 +78,7 @@
         </section>
         <div class="grid wide">
           <div class="row">
-            <div class="col l-2" style="margin-top: 55px">
+            <div class="col l-2 c-0" style="margin-top: 55px">
               <div class="search-filter">
                 <div class="search-filter__title d-flex align-items-center">
                   <i class="bi bi-funnel"></i>
@@ -336,10 +341,13 @@
                 <p class="search-filter__remove-all">Xoá tất cả bộ lọc</p>
               </div>
             </div>
-            <div class="col l-10" style="margin-top: 14px">
-              <div class="row no-gutters">
-                <div class="search-results">
-                  <div class="col l-12">
+            <div
+              class="col l-10 c-12 product-container"
+              style="margin-top: 14px"
+            >
+              <div class="search-results">
+                <div class="row no-gutters">
+                  <div class="col l-12 c-0">
                     <div class="search-results__header">
                       <p class="search-results__title">
                         Tìm kiếm kết quả cho: "<span>Trai cay</span>"
@@ -402,14 +410,14 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col l-12">
+                  <div class="col l-12 c-12">
                     <div class="search-results__list-products">
                       <div
                         class="row no-gutters sm-gutter get-list-product"
                       ></div>
                     </div>
                   </div>
-                  <div class="col l-12">
+                  <div class="col l-12 c-0">
                     <div
                       class="d-flex justify-content-center"
                       style="margin-top: 14px"
@@ -507,7 +515,7 @@
 
       const product_html = search_filter_products
         .map((product, index) => {
-          return `<div class="col l-2-4">
+          return `<div class="col l-2-4 c-6 ">
                           <div class="search-results__product-item bg-white">
                             <div
                               class="product-item__images-wrapper position-relative"

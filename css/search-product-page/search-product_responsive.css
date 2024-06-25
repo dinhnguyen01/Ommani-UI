@@ -1,0 +1,31 @@
+@media only screen and (max-width: 600px) {
+  .ommani-top {
+    display: none !important;
+  }
+  .search-body-wrapper .subbar-top {
+    display: none !important;
+  }
+  .search-body-wrapper .product-category-wrapper {
+    display: none !important;
+  }
+  .search-body-wrapper .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .search-body-wrapper .product-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .search-body-wrapper .search-results {
+    margin: 0px 16px;
+  }
+  .search-body-wrapper .search-results .search-results__list-products .col.l-2-4.c-6 {
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+  .search-body-wrapper .search-results .search-results__list-products .col.l-2-4.c-6 .search-results__product-item {
+    margin-bottom: 18px;
+  }
+}
+
+/*# sourceMappingURL=search-product_responsive.css.map */

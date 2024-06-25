@@ -243,6 +243,7 @@ $primary-Color: #1ab357;
             border-radius: 0px;
             padding: 12px 0px 24px;
             box-shadow: 0px 0px 15px 0px #0c2f4c26;
+            z-index: 10;
 
             &::after {
               content: "";
@@ -408,6 +409,31 @@ $primary-Color: #1ab357;
                 font-weight: 500;
               }
             }
+          }
+        }
+      }
+
+      .search-wrapper__mobile {
+        display: none;
+        height: 42px;
+        padding: 12px;
+        gap: 12px;
+        background-color: white;
+
+        input {
+          border: 0;
+          width: 100%;
+
+          &:focus {
+            outline: none;
+          }
+
+          &::placeholder {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16.41px;
+            text-align: left;
+            color: #9794a6;
           }
         }
       }

@@ -1,6 +1,74 @@
 /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .ommani-top .container-wrapper .container {
+    width: 100%;
+    padding: 0px 16px;
+  }
+  .ommani-top .container-wrapper .container .header-icon-right {
+    padding: 0px 16px;
+  }
+}
 /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) {
+  .ommani-top .container-wrapper {
+    width: 100% !important;
+  }
+  .ommani-top .container-wrapper .container {
+    flex-wrap: wrap;
+    gap: 9px;
+    justify-content: center !important;
+    position: relative;
+  }
+  .ommani-top .container-wrapper .container .search-wrapper {
+    display: none;
+  }
+  .ommani-top .container-wrapper .container .header-icon {
+    position: static;
+    z-index: 10;
+  }
+  .ommani-top .container-wrapper .container .header-icon-right {
+    position: absolute;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1;
+  }
+  .ommani-top .container-wrapper .container .header-icon-right .customer-cart {
+    order: 2;
+  }
+  .ommani-top .container-wrapper .container .header-icon-right .customer-cart .notify-badge {
+    display: none;
+  }
+  .ommani-top .container-wrapper .container .search-wrapper__mobile {
+    display: flex;
+    align-items: center;
+  }
+}
 /* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 992px) {
+  .ommani-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .ommani-top .navbar-wrapper {
+    display: none !important;
+  }
+  .ommani-top .container-wrapper {
+    width: 90%;
+  }
+  .ommani-top .container-wrapper .container .search-wrapper {
+    width: calc(100% - 320px);
+  }
+  .ommani-top .container-wrapper .container .search-wrapper .fast-search-key_block {
+    display: none;
+  }
+  .ommani-top .container-wrapper .container .header-icon-right .customer-block .customer-body {
+    display: none !important;
+  }
+  .ommani-top .container-wrapper .container .header-icon-right .customer-block span {
+    display: none;
+  }
+}
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 

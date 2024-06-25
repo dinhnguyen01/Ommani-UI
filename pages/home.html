@@ -28,6 +28,8 @@
     <link rel="stylesheet" href="../css/footer/footer.css" />
     <link rel="stylesheet" href="../css/home/home.css" />
     <link rel="stylesheet" href="../css/header/header-responsive.css" />
+    <link rel="stylesheet" href="../css/footer/footer-responisve.css" />
+    <link rel="stylesheet" href="../css/home/home-responsive.css" />
 
     <title>Home</title>
   </head>
@@ -131,53 +133,51 @@
             </div>
           </div>
           <div class="categories-icon-wrapper">
-            <div class="categories-block d-flex justify-content-center">
-              <ul
-                class="category-list d-flex align-items-center justify-content-center"
-              >
-                <li class="category-item">
-                  <a href="#">
-                    <img src="../images/home-img/cate-01.svg" alt="icon" />
-                  </a>
-                  <p>Ommani Mall</p>
-                </li>
-                <li class="category-item">
-                  <a href="#">
-                    <img src="../images/home-img/cate-02.svg" alt="icon" />
-                  </a>
-                  <p>Đi chợ</p>
-                </li>
-                <li class="category-item">
-                  <a href="#">
-                    <img src="../images/home-img/cate-03.svg" alt="icon" />
-                  </a>
-                  <p>Bán Sỉ</p>
-                </li>
-                <li class="category-item">
-                  <a href="#">
-                    <img src="../images/home-img/cate-04.svg" alt="icon" />
-                  </a>
-                  <p>Bán Drop</p>
-                </li>
-                <li class="category-item">
-                  <a href="#">
-                    <img src="../images/home-img/cate-05.svg" alt="icon" />
-                  </a>
-                  <p>Bán Quốc Tế</p>
-                </li>
-                <li class="category-item">
-                  <a href="#">
-                    <img src="../images/home-img/cate-06.svg" alt="icon" />
-                  </a>
-                  <p>OCOP</p>
-                </li>
-                <li class="category-item">
-                  <a href="#">
-                    <img src="../images/home-img/cate-07.svg" alt="icon" />
-                  </a>
-                  <p>Chứng nhận</p>
-                </li>
-              </ul>
+            <div
+              class="category-list d-flex align-items-center justify-content-center"
+            >
+              <div class="category-item">
+                <a href="#">
+                  <img src="../images/home-img/cate-01.svg" alt="icon" />
+                </a>
+                <p>Ommani Mall</p>
+              </div>
+              <div class="category-item">
+                <a href="#">
+                  <img src="../images/home-img/cate-02.svg" alt="icon" />
+                </a>
+                <p>Đi chợ</p>
+              </div>
+              <div class="category-item">
+                <a href="#">
+                  <img src="../images/home-img/cate-03.svg" alt="icon" />
+                </a>
+                <p>Bán Sỉ</p>
+              </div>
+              <div class="category-item">
+                <a href="#">
+                  <img src="../images/home-img/cate-04.svg" alt="icon" />
+                </a>
+                <p>Bán Drop</p>
+              </div>
+              <div class="category-item">
+                <a href="#">
+                  <img src="../images/home-img/cate-05.svg" alt="icon" />
+                </a>
+                <p>Bán Quốc Tế</p>
+              </div>
+              <div class="category-item">
+                <a href="#">
+                  <img src="../images/home-img/cate-06.svg" alt="icon" />
+                </a>
+                <p>OCOP</p>
+              </div>
+              <div class="category-item">
+                <a href="#">
+                  <img src="../images/home-img/cate-07.svg" alt="icon" />
+                </a>
+                <p>Chứng nhận</p>
+              </div>
             </div>
           </div>
           <div
@@ -353,7 +353,7 @@
             <div class="product-category-list"></div>
           </section>
           <section
-            class="explore-wrapper d-flex flex-column align-items-center"
+            class="explore-wrapper d-flex flex-column align-items-center w-100"
           >
             <div class="explore-heading d-flex align-items-center w-100">
               <p>Khám phá thêm</p>
@@ -401,7 +401,7 @@
       const explore_item = jsonData.map((exploreItem, index) => {
         const storeKey = Object.keys(exploreItem);
         const storeData = exploreItem[storeKey];
-        return `              <div class="explore-item w-100 d-flex flex-column">
+        return `              <div class="explore-item d-flex flex-column">
                 <div class="item-header d-flex align-items-start">
                   <img
                     class="img-store"

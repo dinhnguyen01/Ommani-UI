@@ -1,17 +1,102 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .ommani-top .container-wrapper {
+    .container {
+      width: 100%;
+      padding: 0px 16px;
+
+      .header-icon-right {
+        padding: 0px 16px;
+      }
+    }
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 }
 
+@media only screen and (max-width: 768px) {
+  .ommani-top .container-wrapper {
+    width: 100% !important;
+    .container {
+      flex-wrap: wrap;
+      gap: 9px;
+      justify-content: center !important;
+      position: relative;
+      .search-wrapper {
+        display: none;
+      }
+
+      .header-icon {
+        position: static;
+        z-index: 10;
+      }
+
+      .header-icon-right {
+        position: absolute;
+        justify-content: space-between;
+        width: 100%;
+        z-index: 1;
+
+        .customer-cart {
+          order: 2;
+          .notify-badge {
+            display: none;
+          }
+        }
+      }
+
+      .search-wrapper__mobile {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 }
 
+@media only screen and (max-width: 992px) {
+  .ommani-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .navbar-wrapper {
+      display: none !important;
+    }
+
+    .container-wrapper {
+      width: 90%;
+      .container {
+        .search-wrapper {
+          width: calc(100% - 320px);
+          .fast-search-key_block {
+            display: none;
+          }
+        }
+        .header-icon-right {
+          .customer-block {
+            .customer-body {
+              display: none !important;
+            }
+            span {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+}
+
+@media screen and (max-width: 1200px) {
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
