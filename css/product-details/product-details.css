@@ -133,6 +133,9 @@
   border-radius: 50%;
   background-color: #f4f4f4;
 }
+.product-details__wrapper .product-details__container .product-preview-info .product-info {
+  margin-left: 15px;
+}
 .product-details__wrapper .product-details__container .product-preview-info .product-info .product-info__header {
   gap: 12px;
 }
@@ -351,7 +354,7 @@
 }
 .product-details__wrapper .product-details__container .product-preview-info .product-info .product-info__body .product-info__actions {
   gap: 20px;
-  margin-right: 51px;
+  margin-right: 41px;
 }
 .product-details__wrapper .product-details__container .product-preview-info .product-info .product-info__body .product-info__actions .product__action-button {
   width: 245px;
