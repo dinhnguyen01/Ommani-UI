@@ -12,6 +12,14 @@
       display: none !important;
     }
 
+    .search-filter {
+      .search-filter__title {
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+
     .row {
       margin-left: 0;
       margin-right: 0;
@@ -38,8 +46,11 @@
     }
 
     .filter-mobile {
-      position: absolute;
+      position: fixed;
       right: -50%;
+      height: 100vh;
+      overflow-y: scroll;
+      scrollbar-width: none;
       background-color: white;
       z-index: 10;
       transition: right 0.5s ease-in-out;
@@ -53,6 +64,7 @@
     .search-results {
       margin: 0px 3px;
       .search-results__list-products {
+        margin-top: 13px;
         .col.l-2-4.c-6 {
           padding-left: 9px;
           padding-right: 9px;

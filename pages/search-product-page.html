@@ -82,7 +82,9 @@
             <div class="col l-2 c-6 filter-mobile">
               <div class="search-filter">
                 <div class="search-filter__title d-flex align-items-center">
-                  <i class="bi bi-funnel"></i>
+                  <button onclick="off()" class="border-0 bg-transparent">
+                    <i class="bi bi-funnel"></i>
+                  </button>
                   <p>Bộ lọc tìm kiếm</p>
                 </div>
                 <div class="search-filter__section">
@@ -723,14 +725,23 @@
       const btn_filter = document.querySelector(".btn__filter");
       const filter_block = document.querySelector(".filter-mobile");
       const overlay = document.querySelector(".overlay");
+      const btnHandle = document.querySelector(
+        ".search-filter__title > button > i"
+      );
       function on() {
         overlay.style.display = "block";
         filter_block.style.right = "0%";
+        btnHandle.classList.remove("bi-funnel");
+        btnHandle.classList.add("bi-x-lg");
+        document.body.classList.add("no-scroll");
       }
 
       function off() {
         overlay.style.display = "none";
         filter_block.style.right = "-50%";
+        btnHandle.classList.add("bi-funnel");
+        btnHandle.classList.remove("bi-x-lg");
+        document.body.classList.remove("no-scroll");
       }
     </script>
   </body>

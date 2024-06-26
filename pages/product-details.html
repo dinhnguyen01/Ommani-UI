@@ -27,7 +27,12 @@
     <link rel="stylesheet" href="../css/grid/grid.css" />
     <link rel="stylesheet" href="../css/header/header.css" />
     <link rel="stylesheet" href="../css/footer/footer.css" />
+    <link rel="stylesheet" href="../css/footer/footer-responisve.css" />
     <link rel="stylesheet" href="../css/product-details/product-details.css" />
+    <link
+      rel="stylesheet"
+      href="../css/product-details/product-details-responsive.css"
+    />
     <title>Chi tiết sản phẩm</title>
   </head>
   <body>
@@ -73,326 +78,558 @@
         <div class="grid wide">
           <div class="product-details__container">
             <div class="row no-gutters">
-              <div
-                class="col l-12 bg-white"
-                style="padding: 17px 20px 36px; border-radius: 6px"
-              >
-                <div class="row sm-gutter">
-                  <div class="col l-5">
-                    <div
-                      class="product-gallery d-flex flex-column align-items-center"
-                    >
-                      <div class="product-gallery__main-image">
-                        <img
-                          class="img-fluid"
-                          src="../images/product-details/img-product/img-product_primary.png"
-                          alt="img-product-primary"
-                          id="mainImage"
-                        />
-                        <div class="product-gallery__play-button">
-                          <svg
-                            width="43"
-                            height="58"
-                            viewBox="0 0 43 58"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M0 29V53.3447C0 56.5755 3.63212 58.4733 6.28426 56.6283L41.2798 32.2836C43.5675 30.6922 43.5674 27.3078 41.2798 25.7164L6.28426 1.37166C3.63211 -0.473315 0 1.42452 0 4.65528V29Z"
-                              fill="#F5F5F7"
-                            />
-                          </svg>
-                        </div>
-                      </div>
+              <div class="col l-12 bg-white" style="border-radius: 6px">
+                <div class="product-preview-info">
+                  <div class="row sm-gutter">
+                    <div class="col l-5 c-12">
                       <div
-                        class="product-gallery__thumbnails d-flex align-items-center justify-content-center position-relative"
+                        class="product-gallery d-flex flex-column align-items-center"
                       >
-                        <img
-                          src="../images/product-details/img-product/thumb1.png"
-                          alt="Thumb 1"
-                          class="product-gallery__thumbnail"
-                          onclick="changeImage('')"
-                        />
-                        <img
-                          src="../images/product-details/img-product/thumb2.png"
-                          alt="Thumb 2"
-                          class="product-gallery__thumbnail"
-                          onclick="changeImage('')"
-                        />
-                        <img
-                          src="../images/product-details/img-product/thumb3.png"
-                          alt="Thumb 3"
-                          class="product-gallery__thumbnail"
-                          onclick="changeImage('')"
-                        />
-                        <img
-                          src="../images/product-details/img-product/thumb4.png"
-                          alt="Thumb 4"
-                          class="product-gallery__thumbnail"
-                          onclick="changeImage('')"
-                        />
-                        <img
-                          src="../images/product-details/img-product/thumb5.jpg"
-                          alt="Thumb 5"
-                          class="product-gallery__thumbnail"
-                          onclick="changeImage('')"
-                        />
-
-                        <button class="btn-thumb pre-btn">
-                          <i class="bi bi-chevron-left"></i>
-                        </button>
-                        <button class="btn-thumb next-btn">
-                          <i class="bi bi-chevron-right"></i>
-                        </button>
-                      </div>
-                      <div class="product-gallery__share d-flex">
-                        <p>Chia sẻ:</p>
-                        <div class="share-block d-flex align-items-center">
-                          <a href="#" class="product-gallery__share-icon">
-                            <img
-                              src="../images/product-details/icon/mess.svg"
-                              alt="icon-share"
-                            />
-                          </a>
-                          <a href="#" class="product-gallery__share-icon">
-                            <img
-                              src="../images/product-details/icon/fb.svg"
-                              alt="icon-share"
-                            />
-                          </a>
-                          <a href="#" class="product-gallery__share-icon">
-                            <img
-                              src="../images/product-details/icon/zalo.svg"
-                              alt="icon-share"
-                            />
-                          </a>
-                          <a href="#" class="product-gallery__share-icon">
-                            <span
-                              class="d-flex align-items-center justify-content-center"
+                        <div class="product-gallery__main-image">
+                          <img
+                            class="img-fluid"
+                            src="../images/product-details/img-product/img-product_primary.png"
+                            alt="img-product-primary"
+                            id="mainImage"
+                          />
+                          <div class="product-item__tags position-absolute">
+                            <span>7.7</span>
+                            <p class="text-uppercase">Ommani freeship+</p>
+                          </div>
+                          <img
+                            class="img-trans-mobile"
+                            src="../images/product-details/icon/transport-mobile.svg"
+                            alt="icon-trans"
+                          />
+                          <div class="product-gallery__play-button">
+                            <svg
+                              width="43"
+                              height="58"
+                              viewBox="0 0 43 58"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
                             >
+                              <path
+                                d="M0 29V53.3447C0 56.5755 3.63212 58.4733 6.28426 56.6283L41.2798 32.2836C43.5675 30.6922 43.5674 27.3078 41.2798 25.7164L6.28426 1.37166C3.63211 -0.473315 0 1.42452 0 4.65528V29Z"
+                                fill="#F5F5F7"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                        <div
+                          class="product-gallery__thumbnails d-flex align-items-center justify-content-center position-relative"
+                        >
+                          <img
+                            src="../images/product-details/img-product/thumb1.png"
+                            alt="Thumb 1"
+                            class="product-gallery__thumbnail"
+                            onclick="changeImage('')"
+                          />
+                          <img
+                            src="../images/product-details/img-product/thumb2.png"
+                            alt="Thumb 2"
+                            class="product-gallery__thumbnail"
+                            onclick="changeImage('')"
+                          />
+                          <img
+                            src="../images/product-details/img-product/thumb3.png"
+                            alt="Thumb 3"
+                            class="product-gallery__thumbnail"
+                            onclick="changeImage('')"
+                          />
+                          <img
+                            src="../images/product-details/img-product/thumb4.png"
+                            alt="Thumb 4"
+                            class="product-gallery__thumbnail"
+                            onclick="changeImage('')"
+                          />
+                          <img
+                            src="../images/product-details/img-product/thumb5.jpg"
+                            alt="Thumb 5"
+                            class="product-gallery__thumbnail"
+                            onclick="changeImage('')"
+                          />
+
+                          <button class="btn-thumb pre-btn">
+                            <i class="bi bi-chevron-left"></i>
+                          </button>
+                          <button class="btn-thumb next-btn">
+                            <i class="bi bi-chevron-right"></i>
+                          </button>
+                        </div>
+                        <div class="product-gallery__share d-flex">
+                          <p>Chia sẻ:</p>
+                          <div class="share-block d-flex align-items-center">
+                            <a href="#" class="product-gallery__share-icon">
                               <img
-                                src="../images/product-details/icon/files.svg"
+                                src="../images/product-details/icon/mess.svg"
                                 alt="icon-share"
                               />
-                            </span>
-                          </a>
+                            </a>
+                            <a href="#" class="product-gallery__share-icon">
+                              <img
+                                src="../images/product-details/icon/fb.svg"
+                                alt="icon-share"
+                              />
+                            </a>
+                            <a href="#" class="product-gallery__share-icon">
+                              <img
+                                src="../images/product-details/icon/zalo.svg"
+                                alt="icon-share"
+                              />
+                            </a>
+                            <a href="#" class="product-gallery__share-icon">
+                              <span
+                                class="d-flex align-items-center justify-content-center"
+                              >
+                                <img
+                                  src="../images/product-details/icon/files.svg"
+                                  alt="icon-share"
+                                />
+                              </span>
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col l-7">
-                    <div class="product-info">
-                      <div
-                        class="product-info__header d-flex align-items-start"
-                      >
-                        <span class="product-info__badge">Mall</span>
-                        <div class="product-info__container">
-                          <div
-                            class="d-flex flex-column align-items-start"
-                            style="gap: 12px"
-                          >
-                            <p class="product-info__name">
-                              Bông Cải Xanh - Công Nghệ Làm Sạch Tiêu Chuẩn Đức
-                              Gói 500g Đà Lạt
-                            </p>
+                    <div class="col l-7 c-12">
+                      <div class="product-info">
+                        <div class="row">
+                          <div class="col l-12 c-12">
                             <div
-                              class="d-flex align-items-center"
-                              style="gap: 21px"
+                              class="product-info__header d-flex align-items-start"
                             >
-                              <div
-                                class="product-info__star d-flex align-items-center"
-                              >
-                                <p style="text-decoration: underline">4.8</p>
-                                <span>
-                                  &#9733;&#9733;&#9733;&#9733;&#9733;
-                                </span>
-                              </div>
-                              <p class="product-info__rating">
-                                <span style="text-decoration: underline">
-                                  513
-                                </span>
-                                đánh giá
-                              </p>
-                              <p class="product-info__sold">
-                                <span style="text-decoration: underline">
-                                  246k
-                                </span>
-                                đã bán
-                              </p>
-                            </div>
-                          </div>
-                          <div
-                            class="d-flex align-items-end justify-content-between"
-                            style="width: 92%"
-                          >
-                            <p class="product-info__price">
-                              132.000
-                              <span style="text-decoration: underline">đ</span>
-                            </p>
-                            <div class="product-info__qr">
-                              <img
-                                src="../images/product-details/icon/qr.svg"
-                                alt="qr"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="product-info__body d-flex flex-column">
-                        <div
-                          class="product-info__quantity d-flex align-items-start"
-                        >
-                          <p class="product-info__body-text">Số lượng lớn:</p>
-                          <table class="product-info__table">
-                            <tr class="table__row">
-                              <th class="table__header">1-10 Gói</th>
-                              <th class="table__header">11 - 30 Gói</th>
-                              <th class="table__header">Trên 30 gói</th>
-                            </tr>
-                            <tr class="table__row">
-                              <td class="table__data">132k/gói</td>
-                              <td class="table__data">105k/gói</td>
-                              <td class="table__data table__data--contact">
-                                <a href="#" class="table__link">Liên hệ</a>
-                              </td>
-                            </tr>
-                          </table>
-                        </div>
-                        <div
-                          class="product-info__origin d-flex align-items-center"
-                        >
-                          <p class="product-info__body-text">
-                            Truy xuất nguồn gốc:
-                          </p>
-                          <a href="#" class="product-info__origin-link">Link</a>
-                        </div>
-                        <div
-                          class="product-info__delivery d-flex align-items-start"
-                        >
-                          <p class="product-info__body-text">Giao hàng từ:</p>
-                          <div
-                            class="product__delivery-info d-flex flex-column align-items-start"
-                          >
-                            <p class="product-info__address">
-                              46 Trần Nguyên Đán, Thanh Xuân, Hà Nội
-                            </p>
-                            <div
-                              class="product-info__delivery-option d-flex align-items-center justify-content-center"
-                            >
-                              <img
-                                src="../images/product-details/icon/ship.svg"
-                                alt=""
-                              />
-                              <div
-                                class="d-flex flex-column align-items-start"
-                                style="gap: 5px"
-                              >
-                                <p class="product-info__delivery-standard">
-                                  Giao hàng
-                                  <span class="product-info__delivery-type">
-                                    Tiêu chuẩn:
-                                  </span>
-                                  <span class="product-info__delivery-date">
-                                    Thứ 5, ngày 21/04 - Thứ 7 ngày 23/04
-                                  </span>
-                                </p>
-                                <p class="product-info__delivery-cost">
-                                  <span>21.000 đ</span> (Freeship 30K đơn hàng
-                                  từ 150K)
-                                </p>
+                              <span class="product-info__badge">Mall</span>
+                              <div class="product-info__container">
+                                <div
+                                  class="d-flex flex-column align-items-start product-info__name-rate position-relative"
+                                  style="gap: 12px"
+                                >
+                                  <p class="product-info__name">
+                                    Bông Cải Xanh - Công Nghệ Làm Sạch Tiêu
+                                    Chuẩn Đức Gói 500g Đà Lạt
+                                  </p>
+                                  <div
+                                    class="product-item__discount position-absolute"
+                                  >
+                                    <span>14%</span>
+                                  </div>
+                                  <span class="product-price__mobile"
+                                    >87.000 <u>đ</u></span
+                                  >
+                                  <div
+                                    class="d-flex align-items-center product-evaluate__block"
+                                  >
+                                    <div
+                                      class="product-info__star d-flex align-items-center"
+                                    >
+                                      <p style="text-decoration: underline">
+                                        4.8
+                                      </p>
+                                      <span>
+                                        &#9733;&#9733;&#9733;&#9733;&#9733;
+                                      </span>
+                                    </div>
+                                    <p class="product-info__rating">
+                                      <span style="text-decoration: underline">
+                                        513
+                                      </span>
+                                      đánh giá
+                                    </p>
+                                    <p class="product-info__sold">
+                                      <span style="text-decoration: underline">
+                                        246k
+                                      </span>
+                                      đã bán
+                                    </p>
+                                  </div>
+                                </div>
+                                <div
+                                  class="d-flex align-items-end justify-content-between product-info__price-qr"
+                                  style="width: 92%"
+                                >
+                                  <p class="product-info__price">
+                                    132.000
+                                    <span style="text-decoration: underline"
+                                      >đ</span
+                                    >
+                                  </p>
+                                  <div class="product-info__qr">
+                                    <img
+                                      src="../images/product-details/icon/qr.svg"
+                                      alt="qr"
+                                    />
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           </div>
-                        </div>
-                        <div
-                          class="product-info__quantity-selector d-flex align-items-center"
-                        >
-                          <p class="product-info__body-text">Số lượng:</p>
-                          <div
-                            class="d-flex align-items-center"
-                            style="gap: 23px"
-                          >
-                            <div class="d-flex align-items-center">
-                              <button
-                                class="product__quantity-button product__quantity-button--decrease"
+                          <div class="col l-12 c-0">
+                            <div class="product-info__body d-flex flex-column">
+                              <div
+                                class="product-info__quantity d-flex align-items-start"
                               >
-                                <i class="btn-minus bi bi-dash"></i>
-                              </button>
-                              <input
-                                type="text"
-                                class="product__quantity-input"
-                                value="01"
-                              />
-                              <button
-                                class="product__quantity-button product__quantity-button--increase"
+                                <p class="product-info__body-text">
+                                  Số lượng lớn:
+                                </p>
+                                <table class="product-info__table">
+                                  <tr class="table__row">
+                                    <th class="table__header">1-10 Gói</th>
+                                    <th class="table__header">11 - 30 Gói</th>
+                                    <th class="table__header">Trên 30 gói</th>
+                                  </tr>
+                                  <tr class="table__row">
+                                    <td class="table__data">132k/gói</td>
+                                    <td class="table__data">105k/gói</td>
+                                    <td
+                                      class="table__data table__data--contact"
+                                    >
+                                      <a href="#" class="table__link"
+                                        >Liên hệ</a
+                                      >
+                                    </td>
+                                  </tr>
+                                </table>
+                              </div>
+                              <div
+                                class="product-info__origin d-flex align-items-center"
                               >
-                                <i class="btn-plus bi bi-plus btn-handle"></i>
-                              </button>
+                                <p class="product-info__body-text">
+                                  Truy xuất nguồn gốc:
+                                </p>
+                                <a href="#" class="product-info__origin-link"
+                                  >Link</a
+                                >
+                              </div>
+                              <div
+                                class="product-info__delivery d-flex align-items-start"
+                              >
+                                <p class="product-info__body-text">
+                                  Giao hàng từ:
+                                </p>
+                                <div
+                                  class="product__delivery-info d-flex flex-column align-items-start"
+                                >
+                                  <p class="product-info__address">
+                                    46 Trần Nguyên Đán, Thanh Xuân, Hà Nội
+                                  </p>
+                                  <div
+                                    class="product-info__delivery-option d-flex align-items-center justify-content-center"
+                                  >
+                                    <img
+                                      src="../images/product-details/icon/ship.svg"
+                                      alt=""
+                                    />
+                                    <div
+                                      class="d-flex flex-column align-items-start"
+                                      style="gap: 5px"
+                                    >
+                                      <p
+                                        class="product-info__delivery-standard"
+                                      >
+                                        Giao hàng
+                                        <span
+                                          class="product-info__delivery-type"
+                                        >
+                                          Tiêu chuẩn:
+                                        </span>
+                                        <span
+                                          class="product-info__delivery-date"
+                                        >
+                                          Thứ 5, ngày 21/04 - Thứ 7 ngày 23/04
+                                        </span>
+                                      </p>
+                                      <p class="product-info__delivery-cost">
+                                        <span>21.000 đ</span> (Freeship 30K đơn
+                                        hàng từ 150K)
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="product-info__quantity-selector d-flex align-items-center"
+                              >
+                                <p class="product-info__body-text">Số lượng:</p>
+                                <div
+                                  class="d-flex align-items-center"
+                                  style="gap: 23px"
+                                >
+                                  <div class="d-flex align-items-center">
+                                    <button
+                                      class="product__quantity-button product__quantity-button--decrease"
+                                    >
+                                      <i class="btn-minus bi bi-dash"></i>
+                                    </button>
+                                    <input
+                                      type="text"
+                                      class="product__quantity-input"
+                                      value="01"
+                                    />
+                                    <button
+                                      class="product__quantity-button product__quantity-button--increase"
+                                    >
+                                      <i
+                                        class="btn-plus bi bi-plus btn-handle"
+                                      ></i>
+                                    </button>
+                                  </div>
+                                  <p class="product__stock">
+                                    Có 2.400 Sản phẩm có sẵn
+                                  </p>
+                                </div>
+                              </div>
+                              <div
+                                class="product-info__actions d-flex align-items-center justify-content-end"
+                              >
+                                <button
+                                  class="product__action-button product__action-button--cart"
+                                >
+                                  <i class="bi bi-cart2"></i> Thêm Vào Giỏ Hàng
+                                </button>
+                                <button
+                                  class="product__action-button product__action-button--buy"
+                                >
+                                  Mua Ngay
+                                </button>
+                              </div>
+                              <p class="slogan">
+                                Ommani Đảm bảo Sản phẩm đạt tiêu chuẩn.
+                              </p>
                             </div>
-                            <p class="product__stock">
-                              Có 2.400 Sản phẩm có sẵn
-                            </p>
                           </div>
                         </div>
-                        <div
-                          class="product-info__actions d-flex align-items-center justify-content-end"
-                        >
-                          <button
-                            class="product__action-button product__action-button--cart"
-                          >
-                            <i class="bi bi-cart2"></i> Thêm Vào Giỏ Hàng
-                          </button>
-                          <button
-                            class="product__action-button product__action-button--buy"
-                          >
-                            Mua Ngay
-                          </button>
-                        </div>
-                        <p class="slogan">
-                          Ommani Đảm bảo Sản phẩm đạt tiêu chuẩn.
-                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-l-12 bg-white" style="margin-top: 24px">
+
+              <div
+                class="col l-12 c-12 bg-white"
+                style="margin-top: 24px; border-radius: 6px"
+              >
                 <div class="store-wrapper">
-                  <div class="store-info d-flex align-items-center">
-                    <span class="store-info__badge">Mall</span>
-                    <img
-                      class="store-info__img"
-                      src="../images/home-img/store/top-market.png"
-                      alt=""
-                    />
-                    <div class="store-info__block d-flex flex-column">
-                      <p class="store-info__name">
-                        Ommani Mall Thạch Bàn Long Biên
-                      </p>
-                      <div class="d-flex align-items-center" style="gap: 8px">
-                        <p class="store-info__rating">
-                          <span>&#9733;</span> 4.8 (11k+)
-                        </p>
-                        <p class="store-info__type text-uppercase">
-                          GIAO NHANH
-                        </p>
+                  <div class="row no-gutters align-items-center">
+                    <div class="col l-6 c-12">
+                      <div class="store-info d-flex align-items-center">
+                        <span class="store-info__badge">Mall</span>
+                        <img
+                          class="store-info__img"
+                          src="../images/home-img/store/top-market.png"
+                          alt=""
+                        />
+                        <div class="store-info__block d-flex flex-column">
+                          <p class="store-info__name">
+                            Ommani Mall Thạch Bàn Long Biên
+                          </p>
+                          <div
+                            class="d-flex align-items-center"
+                            style="gap: 8px"
+                          >
+                            <p class="store-info__rating">
+                              <span>&#9733;</span> 4.8 (11k+)
+                            </p>
+                            <p class="store-info__type text-uppercase">
+                              GIAO NHANH
+                            </p>
+                          </div>
+                          <div
+                            class="store-info__button-action d-flex align-items-center"
+                          >
+                            <button
+                              class="store-info_button store-info__chat-button"
+                            >
+                              <i class="bi bi-chat-dots"></i> Chat ngay
+                            </button>
+                            <button
+                              class="store-info_button store-info__view-button"
+                            >
+                              <i class="bi bi-shop"></i> Xem shop
+                            </button>
+                          </div>
+                        </div>
                       </div>
+                    </div>
+                    <div class="col l-6 c-0">
                       <div
-                        class="store-info__button-action d-flex align-items-center"
+                        class="store-ratings d-flex flex-column align-items-end"
                       >
-                        <button
-                          class="store-info_button store-info__chat-button"
+                        <div
+                          class="store-rating__info d-flex align-items-center"
                         >
-                          <i class="bi bi-chat-dots"></i> Chat ngay
-                        </button>
-                        <button
-                          class="store-info_button store-info__view-button"
-                        >
-                          <i class="bi bi-shop"></i> Xem shop
-                        </button>
+                          <div class="rated-info total-product_store">
+                            <span>219</span>
+                            <p>Sản phẩm</p>
+                          </div>
+                          <div class="rated-info rate-reaction_store">
+                            <span>98.7%</span>
+                            <p>Tỉ lệ phản hồi</p>
+                          </div>
+                          <div class="rated-info reaction-time_store">
+                            <span>Trong vài giờ</span>
+                            <p>Phản hồi</p>
+                          </div>
+                        </div>
+                        <div class="store-follower d-flex align-items-center">
+                          <div
+                            class="avatar-block d-flex align-items-center justify-content-center"
+                          >
+                            <div class="circle">
+                              <img
+                                src="../images/product-details/avt-follower/avt-01.jpg"
+                                alt="avt-icon"
+                              />
+                            </div>
+                            <div class="circle">
+                              <img
+                                src="../images/product-details/avt-follower/avt-02.jpg"
+                                alt="avt-icon"
+                              />
+                            </div>
+                            <div class="circle">
+                              <img
+                                src="../images/product-details/avt-follower/avt-03.jpg"
+                                alt="avt-icon"
+                              />
+                            </div>
+                            <div class="circle">
+                              <img
+                                src="../images/product-details/avt-follower/avt-04.jpg"
+                                alt="avt-icon"
+                              />
+                            </div>
+                            <div class="circle">
+                              <img
+                                src="../images/product-details/avt-follower/avt-05.jpg"
+                                alt="avt-icon"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="store-follower__text d-flex align-items-center"
+                          >
+                            <span>1.2k</span>
+                            <p>Theo dõi gian hàng</p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+
+              <div
+                class="col l-12 c-12 bg-white"
+                style="margin-top: 19px; border-radius: 6px"
+              >
+                <div class="description-wrapper">
+                  <div
+                    class="description-tab__box position-relative d-flex align-items-center"
+                  >
+                    <button class="tab_btn active">Mô tả sản phẩm</button>
+                    <button class="tab_btn">Đánh giá (60)</button>
+                    <button class="tab_btn">Hỏi đáp (50)</button>
+                    <div class="under-line position-absolute"></div>
+                  </div>
+                  <div class="description-content__box">
+                    <div class="content show">
+                      <div class="table-info">
+                        <span class="text-uppercase desc-heading"
+                          >Thông tin chi tiết</span
+                        >
+                        <table>
+                          <tr>
+                            <th width="30%">Danh mục</th>
+                            <td width="70%">Rau xanh</td>
+                          </tr>
+                          <tr>
+                            <th>Xuất xứ</th>
+                            <td>Việt Nam</td>
+                          </tr>
+                          <tr>
+                            <th>Đóng gói</th>
+                            <td>500g/ Gói</td>
+                          </tr>
+                          <tr>
+                            <th>Công ty Sản xuất</th>
+                            <td>Công Ty TNHH Thành Công</td>
+                          </tr>
+                          <tr>
+                            <th>Tiêu Chuẩn</th>
+                            <td>9001, VIETGAP, ORGANIC</td>
+                          </tr>
+                        </table>
+                      </div>
+                      <div class="desc-text">
+                        <span class="text-uppercase desc-heading"
+                          >Mô tả sản phẩm</span
+                        >
+                        <p>
+                          Sản phẩm không chứa các hóa chất, chất kích thích tăng
+                          trưởng gây hại, đảm bảo an toàn cho sức khỏe người
+                          tiêu dùng. Do đó, bạn hoàn toàn có thể an tâm khi lựa
+                          chọn sản phẩm này trong mỗi bữa ăn của gia đình mình,
+                          giúp bữa ăn trở nên ngon miệng hơn. <br />Món ngon gợi
+                          ý: Bông cải xanh xào thịt bò, canh bông cải xanh thịt
+                          heo, bông cải xanh xào tôm mực<br />
+                          Giá sản phẩm trên OMMANI đã bao gồm thuế theo luật
+                          hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình
+                          thức và địa chỉ giao hàng mà có thể phát sinh thêm chi
+                          phí khác như phí vận chuyển, phụ phí hàng cồng kềnh,
+                          thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có
+                          giá trị trên 1 triệu đồng).....Súp lơ xanh (bông cải
+                          xanh) là loại “siêu” thực phẩm chay này mang lại rất
+                          nhiều lợi ích cho con người. Giống các loại thực vật
+                          khác trong họ cải (cải bruxen, cải xanh, cải bắp, cải
+                          xoăn), súp lơ trắng có chứa rất nhiều vitamin và
+                          khoáng chất. Một số món ăn ngon như súp lơ xào thịt,
+                          thịt bò xào súp lơ, súp lơ muối chua…Súp lơ chứa sắt
+                          và axit folic, ngoài ra còn có nhiều vitamin (A, C,
+                          vitamin nhóm B…) và khoáng chất (kali, natri, magie,
+                          đồng, sắt, lưu huỳnh, clo và phốt pho…).<br /><br />
+                          Hạt giống Bông Cải Xanh F1 No.3 - Súp Lơ Xanh là hạt
+                          giống sinh trưởng mạnh, kháng bệnh tốt. Khi lớn lên
+                          cây cao trung bình, không có nhánh, khả năng chịu
+                          nhiệt và thích nghi rộng. Mặt bông đẹp, hạt mịn, độ
+                          đồng đều rất cao, thu hoạch 55 - 60 ngày sau khi rồng,
+                          thu hoạch tập trung.<br /><br />
+                          - Xuất xứ: Đà Lạt<br /><br />
+                          - Sản phẩm của: Công ty giống cây trồng Phú Nông
+                          <br /><br />
+                          - Quy cách: Gói 0.5 gram<br /><br />
+                          - Cách trồng:<br />
+                          + Khoảng cách trồng: 40x50cm<br />
+                          + Mật độ trồng: 20-30g/1000m2<br /><br />
+                          - Thời gian thu hoạch: 55 - 60 ngày<br /><br />
+                          Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện
+                          hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và
+                          địa chỉ giao hàng mà có thể phát sinh thêm chi phí
+                          khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế
+                          nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá
+                          trị trên 1 triệu đồng).....
+                        </p>
+                      </div>
+                    </div>
+                    <div class="content">
+                      <p>Đánh giá</p>
+                    </div>
+                    <div class="content">
+                      <p>Hỏi đáp</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col l-12 c-0 bg-white"
+                style="margin-top: 18px; border-radius: 6px"
+              >
+                <div class="related-products__container">
+                  <p class="related-products__heading">Sản phẩm liên quan</p>
+                  <div
+                    class="row no-gutters sm-gutter get-related-products"
+                  ></div>
                 </div>
               </div>
             </div>
@@ -405,5 +642,120 @@
     <script src="../js/select-menu.js" defer></script>
     <script src="../js/load-html.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      const tabs = document.querySelectorAll(".tab_btn");
+      const all_content = document.querySelectorAll(".content");
+      tabs.forEach((tab, index) => {
+        tab.addEventListener("click", (e) => {
+          tabs.forEach((tab) => tab.classList.remove("active"));
+          tab.classList.add("active");
+          var line = document.querySelector(".under-line");
+          line.style.width = e.target.offsetWidth + "px";
+          line.style.left = e.target.offsetLeft + "px";
+
+          all_content.forEach((content) => {
+            content.classList.remove("show");
+          });
+          all_content[index].classList.add("show");
+        });
+      });
+    </script>
+
+    <script type="module">
+      import related_products from "../js/related-products.js";
+      const related_products_list = document.querySelector(
+        ".get-related-products"
+      );
+
+      const product_html = related_products
+        .map((product, index) => {
+          return `<div class="col l-2">
+                          <div class="search-results__product-item bg-white">
+                            <div
+                              class="product-item__images-wrapper position-relative"
+                            >
+                              <img
+                                class="img-fluid"
+                                style="width: 100%"
+                                src=${product.img}
+                                alt="img-product"
+                              />
+                              <div
+                                class="product-item__badge-brand d-flex position-absolute"
+                              >
+                                <span>Mall</span>
+                                <img
+                                  src="../images/search-filter-product/badge-brand/iso.png"
+                                  alt="badge-img"
+                                />
+                                <img
+                                  src="../images/search-filter-product/badge-brand/fssc.png"
+                                  alt="badge-img"
+                                />
+                                <img
+                                  src="../images/search-filter-product/badge-brand/haccp.png"
+                                  alt="badge-img"
+                                />
+                              </div>
+                              <div
+                                class="product-item__discount position-absolute"
+                              >
+                                <span>14%</span>
+                              </div>
+                              <div
+                                class="product-item__tags position-absolute d-flex align-items-center"
+                              >
+                                <span>7.7</span>
+                                <p class="text-uppercase">Ommani freeship+</p>
+                              </div>
+                            </div>
+                            <div
+                              class="product-item__details d-flex flex-column"
+                            >
+                              <p class="product-item__title">
+                                Bông cải xanh 100g nội địa Nhật Bản và tự nhiên
+                                100%
+                              </p>
+                              <div
+                                class="product-item__info d-flex flex-column"
+                              >
+                                <div
+                                  class="d-flex align-items-center justify-content-between"
+                                >
+                                  <p class="product-item__price">
+                                    87.000
+                                    <span style="text-decoration: underline"
+                                      >đ</span
+                                    >
+                                  </p>
+
+                                  <img
+                                    src="../images/search-filter-product/icon/transport.svg"
+                                    alt="icon-trans"
+                                  />
+                                </div>
+                                <div
+                                  class="d-flex align-items-center"
+                                  style="gap: 6px"
+                                >
+                                  <span class="product-item__stars">
+                                    &#9733;&#9733;&#9733;&#9733;&#9733;
+                                  </span>
+                                  <span class="line-space"></span>
+                                  <p class="product-item__sold">1.6k đã bán</p>
+                                </div>
+                              </div>
+                              <div class="product-item__location">
+                                <p>TP. Hồ Chí Minh</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>`;
+        })
+        .join("");
+
+      related_products_list.innerHTML = product_html;
+    </script>
   </body>
 </html>
