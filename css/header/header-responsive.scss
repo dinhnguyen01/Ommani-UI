@@ -67,7 +67,6 @@
     .navbar-wrapper {
       display: none !important;
     }
-
     .container-wrapper {
       width: 90%;
       .container {
@@ -78,12 +77,20 @@
           }
         }
         .header-icon-right {
+          .customer-cart {
+            .notify-cart-block {
+              display: none !important;
+            }
+          }
           .customer-block {
             .customer-body {
               display: none !important;
             }
             span {
               display: none;
+            }
+            .menu-setting-customer {
+              display: none !important;
             }
           }
         }

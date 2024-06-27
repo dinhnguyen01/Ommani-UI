@@ -62,11 +62,17 @@
   .ommani-top .container-wrapper .container .search-wrapper .fast-search-key_block {
     display: none;
   }
+  .ommani-top .container-wrapper .container .header-icon-right .customer-cart .notify-cart-block {
+    display: none !important;
+  }
   .ommani-top .container-wrapper .container .header-icon-right .customer-block .customer-body {
     display: none !important;
   }
   .ommani-top .container-wrapper .container .header-icon-right .customer-block span {
     display: none;
+  }
+  .ommani-top .container-wrapper .container .header-icon-right .customer-block .menu-setting-customer {
+    display: none !important;
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */

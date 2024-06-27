@@ -88,7 +88,7 @@ function handleCollapse() {
 
 function initializeCollapse() {
   window.addEventListener("resize", handleCollapse);
-  handleCollapse(); // Ensure collapse is handled on initial load as well
+  handleCollapse();
 }
 
 document.addEventListener("DOMContentLoaded", function () {

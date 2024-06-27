@@ -321,176 +321,173 @@ $color-a3a3a3: #a3a3a3;
           gap: 20px;
           border-radius: 6px;
           margin-top: 13px;
-          .product-info__body-text {
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 16.41px;
-            color: $color-black;
-          }
-          .product-info__quantity {
-            gap: 80px;
-            .product-info__table {
-              border: 1px solid $color-black;
-              .table__row {
-                .table__header,
-                .table__data {
-                  font-size: 14px;
-                  font-weight: 400;
-                  line-height: 16.41px;
-                  text-align: center;
-                  color: $color-black;
-                  border: 1px solid $color-black;
-                  padding: 5px 35px;
-
-                  .table__link {
-                    font-weight: 700;
-                    color: $color-116abd;
-                  }
-                }
-              }
-            }
-          }
-
-          .product-info__origin {
-            gap: 32px;
-            .product-info__origin-link {
-              font-size: 14px;
-              font-weight: 700;
-              line-height: 16.41px;
-              color: $color-116abd;
-              text-decoration: underline;
-            }
-          }
-
-          .product-info__delivery {
-            gap: 78px;
-            .product__delivery-info {
-              gap: 8px;
-              .product-info__address {
-                font-size: 14px;
-                font-weight: 700;
-                line-height: 16.41px;
-                text-align: left;
-                color: $text-color;
-              }
-
-              .product-info__delivery-option {
-                width: 510px;
-                height: 72px;
-                border-radius: 3px;
-                border: 1px solid $color-cccccc;
-                background-color: white;
-                gap: 12px;
-
-                .product-info__delivery-standard {
-                  font-size: 14px;
-                  font-weight: 400;
-                  line-height: 20px;
-                  color: $color-666666;
-                  .product-info__delivery-type {
-                    font-weight: 700;
-                    color: $text-color;
-                  }
-
-                  .product-info__delivery-date {
-                    font-weight: 700;
-                    color: #0066cc;
-                  }
-                }
-
-                .product-info__delivery-cost {
-                  font-size: 14px;
-                  font-weight: 400;
-                  line-height: 20px;
-                  color: $color-666666;
-                  span {
-                    font-weight: 700;
-                    color: $text-color;
-                  }
-                }
-              }
-            }
-          }
-
-          .product-info__quantity-selector {
-            gap: 100px;
-
-            .product__quantity-button {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              width: 24px;
-              height: 24px;
-              line-height: 24px;
-              border: 1px solid #e4e4e4;
-              background-color: white;
-
-              .btn-minus,
-              .btn-plus {
-                font-size: 20px;
-                &::before {
-                  font-weight: 600 !important;
-                }
-                &.btn-handle {
-                  color: $color-29ab56;
-                }
-              }
-            }
-
-            .product__quantity-input {
-              width: 52px;
-              height: 24px;
-              line-height: 24px;
-              border: 1px solid #e4e4e4;
-              text-align: center;
-              &:focus {
-                outline: none;
-              }
-            }
-
-            .product__stock {
+          .table-preview {
+            .product-info__body-text {
               font-size: 14px;
               font-weight: 400;
-              line-height: 24px;
+              line-height: 16.41px;
               color: $color-black;
             }
-          }
+            .table-preview__row {
+              .product-info__quantity {
+                .product-info__table {
+                  border: 1px solid $color-black;
+                  .table__row {
+                    .table__header,
+                    .table__data {
+                      font-size: 14px;
+                      font-weight: 400;
+                      line-height: 16.41px;
+                      text-align: center;
+                      color: $color-black;
+                      border: 1px solid $color-black;
+                      padding: 5px 35px;
 
-          .product-info__actions {
-            gap: 20px;
-            margin-right: 41px;
-            .product__action-button {
-              width: 245px;
-              height: 60px;
-              border: 0;
-
-              &.product__action-button--cart {
-                background-color: white;
-                border-radius: 2.47px;
-                border: 1.85px solid $color-29ab56;
-                color: $color-29ab56;
-                font-size: 20px;
-                font-weight: 500;
-                line-height: 28px;
-                &:hover {
-                  background-color: $color-29ab56;
-                  color: white;
-                }
-
-                i::before {
-                  font-weight: 600 !important;
+                      .table__link {
+                        font-weight: 700;
+                        color: $color-116abd;
+                      }
+                    }
+                  }
                 }
               }
 
-              &.product__action-button--buy {
-                font-size: 20px;
-                font-weight: 700;
-                border-radius: 2.47px;
-                line-height: 28px;
-                color: white;
-                background-color: $color-29ab56;
-                &:hover {
-                  background-color: #1a9043;
+              .product-info__origin {
+                .product-info__origin-link {
+                  font-size: 14px;
+                  font-weight: 700;
+                  line-height: 16.41px;
+                  color: $color-116abd;
+                  text-decoration: underline;
+                }
+              }
+
+              .product-info__delivery {
+                .product__delivery-info {
+                  gap: 8px;
+                  .product-info__address {
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 16.41px;
+                    text-align: left;
+                    color: $text-color;
+                  }
+
+                  .product-info__delivery-option {
+                    width: 510px;
+                    height: 72px;
+                    border-radius: 3px;
+                    border: 1px solid $color-cccccc;
+                    background-color: white;
+                    gap: 12px;
+
+                    .product-info__delivery-standard {
+                      font-size: 14px;
+                      font-weight: 400;
+                      line-height: 20px;
+                      color: $color-666666;
+                      .product-info__delivery-type {
+                        font-weight: 700;
+                        color: $text-color;
+                      }
+
+                      .product-info__delivery-date {
+                        font-weight: 700;
+                        color: #0066cc;
+                      }
+                    }
+
+                    .product-info__delivery-cost {
+                      font-size: 14px;
+                      font-weight: 400;
+                      line-height: 20px;
+                      color: $color-666666;
+                      span {
+                        font-weight: 700;
+                        color: $text-color;
+                      }
+                    }
+                  }
+                }
+              }
+
+              .product-info__quantity-selector {
+                .product__quantity-button {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 24px;
+                  height: 24px;
+                  line-height: 24px;
+                  border: 1px solid #e4e4e4;
+                  background-color: white;
+
+                  .btn-minus,
+                  .btn-plus {
+                    font-size: 20px;
+                    &::before {
+                      font-weight: 600 !important;
+                    }
+                    &.btn-handle {
+                      color: $color-29ab56;
+                    }
+                  }
+                }
+
+                .product__quantity-input {
+                  width: 52px;
+                  height: 24px;
+                  line-height: 24px;
+                  border: 1px solid #e4e4e4;
+                  text-align: center;
+                  &:focus {
+                    outline: none;
+                  }
+                }
+
+                .product__stock {
+                  font-size: 14px;
+                  font-weight: 400;
+                  line-height: 24px;
+                  color: $color-black;
+                }
+              }
+
+              .product-info__actions {
+                .product__action-button {
+                  width: 245px;
+                  height: 60px;
+                  border: 0;
+
+                  &.product__action-button--cart {
+                    background-color: white;
+                    border-radius: 2.47px;
+                    border: 1.85px solid $color-29ab56;
+                    color: $color-29ab56;
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 28px;
+                    &:hover {
+                      background-color: $color-29ab56;
+                      color: white;
+                    }
+
+                    i::before {
+                      font-weight: 600 !important;
+                    }
+                  }
+
+                  &.product__action-button--buy {
+                    font-size: 20px;
+                    font-weight: 700;
+                    border-radius: 2.47px;
+                    line-height: 28px;
+                    color: white;
+                    background-color: $color-29ab56;
+                    &:hover {
+                      background-color: #1a9043;
+                    }
+                  }
                 }
               }
             }
@@ -1068,7 +1065,6 @@ $color-a3a3a3: #a3a3a3;
             }
           }
           .customer-comment__text {
-            font-family: Roboto;
             font-size: 12px;
             font-weight: 400;
             line-height: 16.8px;

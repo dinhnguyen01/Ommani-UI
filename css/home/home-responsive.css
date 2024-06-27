@@ -12,6 +12,7 @@
   }
   .home-wrapper .container .categories-icon-wrapper .category-list .category-item {
     flex-shrink: 0;
+    flex-basis: 60px;
   }
   .home-wrapper .container .explore-wrapper {
     margin-top: 12px;
@@ -31,7 +32,7 @@
     display: none;
   }
   .home-wrapper .container .categories-icon-wrapper .category-list {
-    gap: 20px !important;
+    gap: 10px !important;
     background-color: transparent;
   }
   .home-wrapper .container .categories-icon-wrapper .category-list .category-item img {
@@ -56,6 +57,12 @@
   }
   .home-wrapper .container .categories-icon-wrapper .category-list .category-item p {
     font-size: 10px;
+    width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .home-wrapper .container .reputation-store-wrapper .store-card_container {
     gap: 14px;
