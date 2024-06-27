@@ -78,13 +78,19 @@
         <div class="grid wide">
           <div class="product-details__container">
             <div class="row no-gutters">
-              <div class="col l-12 bg-white" style="border-radius: 6px">
+              <div class="col l-12">
                 <div class="product-preview-info">
                   <div class="row no-gutters">
                     <div class="col l-5 c-12">
                       <div
                         class="product-gallery d-flex flex-column align-items-center"
                       >
+                        <a href="#" class="button-back__mobile">
+                          <i class="bi bi-arrow-left-short"></i>
+                        </a>
+                        <a href="#" class="button-cart__mobile">
+                          <i class="bi bi-cart2"></i>
+                        </a>
                         <div class="product-gallery__main-image">
                           <img
                             class="img-fluid"
@@ -405,10 +411,7 @@
                 </div>
               </div>
 
-              <div
-                class="col l-12 c-12 bg-white"
-                style="margin-top: 24px; border-radius: 6px"
-              >
+              <div class="col l-12 c-12">
                 <div class="store-wrapper">
                   <div class="row no-gutters align-items-center">
                     <div class="col l-6 c-12">
@@ -519,10 +522,7 @@
                 </div>
               </div>
 
-              <div
-                class="col l-12 c-12 bg-white"
-                style="margin-top: 19px; border-radius: 6px"
-              >
+              <div class="col l-12 c-12">
                 <div class="description-wrapper">
                   <div
                     class="description-tab__box position-relative d-flex align-items-center"
@@ -621,15 +621,332 @@
                 </div>
               </div>
 
-              <div
-                class="col l-12 c-0 bg-white"
-                style="margin-top: 18px; border-radius: 6px"
-              >
+              <div class="col l-12 c-0">
                 <div class="related-products__container">
                   <p class="related-products__heading">Sản phẩm liên quan</p>
                   <div
                     class="row no-gutters sm-gutter get-related-products"
                   ></div>
+                </div>
+              </div>
+
+              <div class="col l-0 c-12">
+                <div class="rating-product__customer-mobile">
+                  <div
+                    class="product-rating__average d-flex justify-content-between align-items-center"
+                  >
+                    <div class="product-rating__info--mobile">
+                      <span class="average">
+                        4.9<span class="total">/5</span>
+                      </span>
+                      <p>86 đánh giá</p>
+                    </div>
+                    <div class="line-space"></div>
+                    <div
+                      class="product-rating__stars--mobile d-flex flex-column align-items-center"
+                    >
+                      <div class="star-container five-star">
+                        <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        <div
+                          class="progress"
+                          role="progressbar"
+                          aria-label="Basic example"
+                          aria-valuenow="0"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <div class="progress-bar" style="width: 70%"></div>
+                        </div>
+                        <p>70</p>
+                      </div>
+                      <div class="star-container four-star">
+                        <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                        <div
+                          class="progress"
+                          role="progressbar"
+                          aria-label="Basic example"
+                          aria-valuenow="0"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <div class="progress-bar" style="width: 5%"></div>
+                        </div>
+                        <p>5</p>
+                      </div>
+                      <div class="star-container three-star">
+                        <span>&#9733;&#9733;&#9733;&#9734;&#9734;</span>
+                        <div
+                          class="progress"
+                          role="progressbar"
+                          aria-label="Basic example"
+                          aria-valuenow="0"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <div class="progress-bar" style="width: 8%"></div>
+                        </div>
+                        <p>8</p>
+                      </div>
+                      <div class="star-container two-star">
+                        <span>&#9733;&#9733;&#9734;&#9734;&#9734;</span>
+                        <div
+                          class="progress"
+                          role="progressbar"
+                          aria-label="Basic example"
+                          aria-valuenow="0"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <div class="progress-bar" style="width: 2%"></div>
+                        </div>
+                        <p>2</p>
+                      </div>
+                      <div class="star-container one-star">
+                        <span>&#9733;&#9734;&#9734;&#9734;&#9734;</span>
+                        <div
+                          class="progress"
+                          role="progressbar"
+                          aria-label="Basic example"
+                          aria-valuenow="0"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <div class="progress-bar" style="width: 1%"></div>
+                        </div>
+                        <p>1</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter-comment__options d-flex flex-column">
+                    <div
+                      class="filter-comment__block d-flex align-items-center justify-content-center"
+                    >
+                      <button class="btn-lastest btn--active">Mới nhất</button>
+                      <button class="btn-images">Hình ảnh</button>
+                      <button class="btn-content">Nội dung</button>
+                    </div>
+                    <div
+                      class="filter-comment__stars d-flex align-items-center justify-content-between"
+                    >
+                      <button class="btn__filter--star">
+                        <p>5</p>
+                        <span>&#9733;</span>
+                      </button>
+                      <button class="btn__filter--star">
+                        <p>4</p>
+                        <span>&#9733;</span>
+                      </button>
+                      <button class="btn__filter--star">
+                        <p>3</p>
+                        <span>&#9733;</span>
+                      </button>
+                      <button class="btn__filter--star">
+                        <p>2</p>
+                        <span>&#9733;</span>
+                      </button>
+                      <button class="btn__filter--star">
+                        <p>1</p>
+                        <span>&#9733;</span>
+                      </button>
+                    </div>
+                    <div class="customer-comment__container">
+                      <div class="comment-block d-flex flex-column">
+                        <div
+                          class="customer-info d-flex align-items-start justify-content-between"
+                        >
+                          <div
+                            class="customer-info__left d-flex align-items-center"
+                          >
+                            <div class="customer-avt">
+                              <img
+                                class="img-fluid"
+                                src="../images/product-details/comment-mobile/avt-customer/customer-01.png"
+                                alt="avt"
+                              />
+                            </div>
+                            <div
+                              class="d-flex flex-column align-items-start block-name-star"
+                            >
+                              <p class="customer-name">Tra My</p>
+                              <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            </div>
+                          </div>
+                          <div class="customer-info__right-date">
+                            16/03/2022
+                          </div>
+                        </div>
+                        <p class="customer-comment__text">
+                          Sản phẩm đúng loại và màu sắc mình đặt, giao hàng
+                          tương đối nhanh trong mùa dịch. Sử dụng ổn lắm, đúng
+                          dung lượng, giá hời vì lúc mua có chương trình giảm
+                          giá. Thanks shop nhé.
+                        </p>
+                        <div class="customer__upload-product-img-video">
+                          <div class="img_customer-upload">
+                            <img
+                              src="../images/product-details/comment-mobile/img-customer-upload/customer01-upload-01.jpg"
+                              alt="img-upload"
+                            />
+                          </div>
+                          <div class="img_customer-upload">
+                            <img
+                              src="../images/product-details/comment-mobile/img-customer-upload/customer01-upload-02.jpg"
+                              alt="img-upload"
+                            />
+                          </div>
+                          <div class="img_customer-upload">
+                            <img
+                              src="../images/product-details/comment-mobile/img-customer-upload/customer01-upload-03.jpg"
+                              alt="img-upload"
+                            />
+                          </div>
+                          <div class="img_customer-upload">
+                            <img
+                              src="../images/product-details/comment-mobile/img-customer-upload/customer01-upload-04.jpg"
+                              alt="img-upload"
+                            />
+                          </div>
+                        </div>
+                        <div class="feedback-seller">
+                          <p class="feedback-heading">Phản hồi người bán</p>
+                          <p class="rep-comment">
+                            Cảm ơn quý khách đã tin tưởng và đồng hành cùng
+                            Store ^^
+                          </p>
+                        </div>
+                      </div>
+                      <div class="comment-block d-flex flex-column">
+                        <div
+                          class="customer-info d-flex align-items-start justify-content-between"
+                        >
+                          <div
+                            class="customer-info__left d-flex align-items-center"
+                          >
+                            <div class="customer-avt">
+                              <img
+                                class="img-fluid"
+                                src="../images/product-details/comment-mobile/avt-customer/customer-01.png"
+                                alt="avt"
+                              />
+                            </div>
+                            <div
+                              class="d-flex flex-column align-items-start block-name-star"
+                            >
+                              <p class="customer-name">Tra My</p>
+                              <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            </div>
+                          </div>
+                          <div class="customer-info__right-date">
+                            16/03/2022
+                          </div>
+                        </div>
+                        <p class="customer-comment__text">
+                          Sản phẩm đúng loại và màu sắc mình đặt, giao hàng
+                          tương đối nhanh trong mùa dịch. Sử dụng ổn lắm, đúng
+                          dung lượng, giá hời vì lúc mua có chương trình giảm
+                          giá. Thanks shop nhé.
+                        </p>
+                        <div class="customer__upload-product-img-video">
+                          <div class="img_customer-upload">
+                            <img
+                              src="../images/product-details/comment-mobile/img-customer-upload/customer01-upload-01.jpg"
+                              alt="img-upload"
+                            />
+                          </div>
+                          <div class="img_customer-upload">
+                            <img
+                              src="../images/product-details/comment-mobile/img-customer-upload/customer01-upload-02.jpg"
+                              alt="img-upload"
+                            />
+                          </div>
+                          <div class="img_customer-upload">
+                            <img
+                              src="../images/product-details/comment-mobile/img-customer-upload/customer01-upload-03.jpg"
+                              alt="img-upload"
+                            />
+                          </div>
+                          <div class="img_customer-upload">
+                            <img
+                              src="../images/product-details/comment-mobile/img-customer-upload/customer01-upload-04.jpg"
+                              alt="img-upload"
+                            />
+                          </div>
+                        </div>
+                        <div class="feedback-seller">
+                          <p class="feedback-heading">Phản hồi người bán</p>
+                          <p class="rep-comment">
+                            Cảm ơn quý khách đã tin tưởng và đồng hành cùng
+                            Store ^^
+                          </p>
+                        </div>
+                      </div>
+                      <div class="comment-block d-flex flex-column">
+                        <div
+                          class="customer-info d-flex align-items-start justify-content-between"
+                        >
+                          <div
+                            class="customer-info__left d-flex align-items-center"
+                          >
+                            <div class="customer-avt">
+                              <img
+                                class="img-fluid"
+                                src="../images/product-details/comment-mobile/avt-customer/customer-01.png"
+                                alt="avt"
+                              />
+                            </div>
+                            <div
+                              class="d-flex flex-column align-items-start block-name-star"
+                            >
+                              <p class="customer-name">Tra My</p>
+                              <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            </div>
+                          </div>
+                          <div class="customer-info__right-date">
+                            16/03/2022
+                          </div>
+                        </div>
+                        <p class="customer-comment__text">
+                          Sản phẩm đúng loại và màu sắc mình đặt, giao hàng
+                          tương đối nhanh trong mùa dịch. Sử dụng ổn lắm, đúng
+                          dung lượng, giá hời vì lúc mua có chương trình giảm
+                          giá. Thanks shop nhé.
+                        </p>
+                        <div class="customer__upload-product-img-video">
+                          <div class="img_customer-upload">
+                            <img
+                              src="../images/product-details/comment-mobile/img-customer-upload/customer01-upload-01.jpg"
+                              alt="img-upload"
+                            />
+                          </div>
+                          <div class="img_customer-upload">
+                            <img
+                              src="../images/product-details/comment-mobile/img-customer-upload/customer01-upload-02.jpg"
+                              alt="img-upload"
+                            />
+                          </div>
+                          <div class="img_customer-upload">
+                            <img
+                              src="../images/product-details/comment-mobile/img-customer-upload/customer01-upload-03.jpg"
+                              alt="img-upload"
+                            />
+                          </div>
+                          <div class="img_customer-upload">
+                            <img
+                              src="../images/product-details/comment-mobile/img-customer-upload/customer01-upload-04.jpg"
+                              alt="img-upload"
+                            />
+                          </div>
+                        </div>
+                        <div class="feedback-seller">
+                          <p class="feedback-heading">Phản hồi người bán</p>
+                          <p class="rep-comment">
+                            Cảm ơn quý khách đã tin tưởng và đồng hành cùng
+                            Store ^^
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -639,8 +956,9 @@
     </main>
     <div data-include-html="footer.html"></div>
 
-    <script src="../js/select-menu.js" defer></script>
+    <script type="module" src="../js/select-menu.js"></script>
     <script src="../js/load-html.js"></script>
+    <script type="module" src="../js/handle-collapse.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>

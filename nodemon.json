@@ -1,5 +1,5 @@
 {
   "watch": ["css"],
   "ext": "scss",
-  "exec": "node compile-scss.js"
+  "exec": "sass css:css"
 }

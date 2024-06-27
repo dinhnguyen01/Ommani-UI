@@ -32,9 +32,9 @@
     <div class="footer-wrapper">
       <div class="footer-top">
         <div class="container footer-top_content">
-          <div class="column">
+          <div class="column column-not-child">
             <p class="column-title">Hỗ Trợ khách hàng</p>
-            <div class="column-content">
+            <div class="column-content column-parent-content">
               <ul class="list-link">
                 <li class="link">
                   <a href="#"
@@ -57,9 +57,9 @@
               </ul>
             </div>
           </div>
-          <div class="column">
+          <div class="column column-not-child">
             <p class="column-title">Về Ommani Life</p>
-            <div class="column-content">
+            <div class="column-content column-parent-content">
               <ul class="list-link">
                 <li class="link"><a href="#">Giới thiệu về Ommani</a></li>
                 <li class="link"><a href="#">Tuyển dụng</a></li>
@@ -83,10 +83,10 @@
               </ul>
             </div>
           </div>
-          <div class="column">
+          <div class="column column-has-child">
             <div class="child-column">
               <p class="column-title">Hợp tác và liên kết</p>
-              <div class="column-content">
+              <div class="column-content column-child-content">
                 <ul class="list-link">
                   <li class="link">
                     <a href="#">Quy chế hoạt động sàn GDTMĐT</a>
@@ -98,7 +98,7 @@
 
             <div class="child-column">
               <p class="column-title">Chứng nhận bởi</p>
-              <div class="column-content">
+              <div class="column-content column-child-content">
                 <ul class="list-link d-flex align-items-center">
                   <li class="link">
                     <a href="#">
@@ -125,19 +125,10 @@
               </div>
             </div>
           </div>
-          <div class="column">
+          <div class="column column-has-child">
             <div class="child-column">
-              <p
-                class="column-title"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseExample"
-                aria-expanded="false"
-                aria-controls="collapseExample"
-              >
-                Phương thức thanh toán
-              </p>
-              <div class="column-content collapse" id="collapseExample">
+              <p class="column-title">Phương thức thanh toán</p>
+              <div class="column-content column-child-content">
                 <ul
                   class="list-link list-img d-flex flex-column align-items-start"
                 >
@@ -191,7 +182,7 @@
 
             <div class="child-column">
               <p class="column-title">Dịch vụ giao hàng</p>
-              <div class="column-content">
+              <div class="column-content column-child-content">
                 <ul class="list-link d-flex align-items-center">
                   <li class="link">
                     <a href="#">
@@ -202,27 +193,28 @@
               </div>
             </div>
           </div>
-          <div class="column">
+          <div class="column column-has-child">
             <div class="child-column">
               <p class="column-title">Kết nối với chúng tôi</p>
-              <div class="column-content">
+              <div class="column-content column-child-content">
                 <ul class="list-link list-img">
                   <li class="link">
-                    <a href="#"></a><img src="../images/fb.svg" alt="img" />
+                    <a href="#"><img src="../images/fb.svg" alt="img" /></a>
                   </li>
                   <li class="link">
-                    <a href="#"></a
-                    ><img src="../images/youtube.svg" alt="img" />
+                    <a href="#">
+                      <img src="../images/youtube.svg" alt="img" />
+                    </a>
                   </li>
                   <li class="link">
-                    <a href="#"></a><img src="../images/zalo.svg" alt="img" />
+                    <a href="#"><img src="../images/zalo.svg" alt="img" /></a>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="child-column">
               <p class="column-title">Tải ứng dụng trên điện thoại</p>
-              <div class="column-content">
+              <div class="column-content column-child-content">
                 <ul class="list-link list-img gap-4">
                   <li class="link">
                     <a href="#"><img src="../images/qrcode.svg" alt="img" /></a>
@@ -273,5 +265,6 @@
 
     <!-- Bootstrap Bundle JS (includes Popper) -->
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="../js/handle-collapse.js"></script>
   </body>
 </html>
