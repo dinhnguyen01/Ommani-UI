@@ -2,7 +2,6 @@
   "name": "ommanilife",
   "version": "1.0.0",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "watch": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
